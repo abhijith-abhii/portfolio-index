@@ -1,1 +1,19 @@
-{"date":"2026-09-28","url":"http://127.0.0.1:8099","viewport":1280,"passed":true,"checks":["25 projects rendered in five category groups","Search Kubernetes returns one project","Project details show features, evidence links and accurate execution boundaries","Unmatched search shows empty state","Data Analytics category returns five projects","Featured and category filters combine to one project","Reset restores all 25 projects"]}
+{
+  "date": "2026-09-28",
+  "url": "http://127.0.0.1:8099",
+  "viewport": 1280,
+  "passed": true,
+  "checks": [
+    "25 projects rendered in five category groups",
+    "Search Kubernetes returns one project",
+    "Project details show features, evidence links and accurate execution boundaries",
+    "Unmatched search shows empty state",
+    "Data Analytics category returns five projects",
+    "Featured and category filters combine to one project",
+    "Reset restores all 25 projects",
+    "Public website rendered 25 project cards and 283 local checks",
+    "Public search returned Retention Studio and loaded its actual screenshot"
+  ],
+  "public_url": "https://abhijith-abhii.github.io/portfolio-index/",
+  "public_verified": true
+}
