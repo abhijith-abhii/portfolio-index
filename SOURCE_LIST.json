@@ -1,0 +1,52 @@
+{
+  "url": "https://www.instagram.com/p/DdyMaogE4ud/",
+  "verified_categories": {
+    "Software Engineering": [
+      "Link Shortener with Analytics Dashboard",
+      "Micro-SaaS Link Analytics Dashboard",
+      "Advanced URL Shortener",
+      "Real-Time Collaborative Notes App",
+      "Collaborative Notes App",
+      "Collaborative Notes with Go",
+      "GitHub Activity Visualizer",
+      "Browser Tab Manager & Focus Extension",
+      "Open Source Contribution"
+    ],
+    "Data Science / ML": [
+      "Employee Salary Prediction",
+      "Salary Predictor with Explainable AI",
+      "Customer Churn Prediction",
+      "Churn Prediction with XGBoost + SHAP",
+      "Customer Churn Prediction with FastAPI",
+      "Sports Analytics Deep Dive",
+      "Fine-Tuned LLM for a Niche Task",
+      "Personal Finance Spending Clusters"
+    ],
+    "AI / ML Engineering": [
+      "Domain-Specific RAG Application",
+      "Production RAG Pipeline",
+      "Text-to-SQL Interface",
+      "AI Workflow Agent",
+      "LangGraph Agent System",
+      "LLM Evaluation Platform",
+      "LLM Benchmarking Tool",
+      "Multimodal AI Product"
+    ],
+    "Data Analytics": [
+      "End-to-End SQL Analytics Project",
+      "Marketing Attribution Model Comparison",
+      "Business Question Dashboard",
+      "A/B Testing Statistical Analysis",
+      "Data-Driven Industry Report"
+    ],
+    "Cybersecurity (outside requested scope)": [
+      "Home Network Vulnerability Scanner",
+      "CTF Write-Up Collection",
+      "Phishing Awareness Simulation",
+      "Phishing Simulation Lab",
+      "Password Strength Analyzer",
+      "Log Anomaly Detection Dashboard"
+    ]
+  },
+  "missing_category": "Cloud / DevOps"
+}

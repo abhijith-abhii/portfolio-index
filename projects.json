@@ -1,0 +1,1206 @@
+[
+  {
+    "id": 1,
+    "category": "software-engineering",
+    "slug": "linkscope",
+    "name": "LinkScope",
+    "problem": "URL shortener with campaign analytics",
+    "target_user": "Small campaign teams",
+    "features": [
+      "Validated links",
+      "expiring aliases",
+      "privacy-preserving click counts",
+      "CSV export"
+    ],
+    "stack": "Flask \u00b7 SQLite",
+    "data": "Synthetic links; local click events",
+    "acceptance": "Create, redirect, expire, reject invalid URLs, aggregate clicks",
+    "flagship": true,
+    "local_path": "/Users/rogue/Documents/Codex/2026-09-28/files-pasted-by-the-user-build/outputs/career-portfolio/software-engineering/linkscope",
+    "repository": "https://github.com/abhijith-abhii/linkscope",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "blockers": [],
+    "source_idea": "Link Shortener with Analytics Dashboard",
+    "source_verified": true,
+    "intended_repository": "https://github.com/abhijith-abhii/linkscope",
+    "test_count": 15,
+    "verification_limits": [],
+    "branch": "main",
+    "commit": "ab39f4fc3701820ba27e3a9cf07e0488b427c495",
+    "ci_status": "passed",
+    "ci_runs": [
+      {
+        "id": 36416531874,
+        "name": "Verify",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/abhijith-abhii/linkscope/actions/runs/36416531874"
+      }
+    ],
+    "ci_verified_commit": "f5969e2bae1624a47ddc95d2b9492cf4e904229e",
+    "release_commit": "ab39f4fc3701820ba27e3a9cf07e0488b427c495"
+  },
+  {
+    "id": 2,
+    "category": "software-engineering",
+    "slug": "notemesh",
+    "name": "NoteMesh",
+    "problem": "Shared meeting notes without lost edits",
+    "target_user": "Study groups",
+    "features": [
+      "Live saved-note synchronization with SSE",
+      "Optimistic revision checks and preserved conflict drafts",
+      "Persistent revision history and Markdown export"
+    ],
+    "stack": "Flask \u00b7 SQLite \u00b7 SSE",
+    "data": "Local shared notes",
+    "acceptance": "Two clients sync; stale edits conflict; history persists",
+    "flagship": false,
+    "local_path": "/Users/rogue/Documents/Codex/2026-09-28/files-pasted-by-the-user-build/outputs/career-portfolio/software-engineering/notemesh",
+    "repository": "https://github.com/abhijith-abhii/notemesh",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "blockers": [],
+    "source_idea": "Real-Time Collaborative Notes App",
+    "source_verified": true,
+    "intended_repository": "https://github.com/abhijith-abhii/notemesh",
+    "test_count": 13,
+    "verification_limits": [],
+    "branch": "main",
+    "commit": "6267e3ac6535633f39132753b8b98a79bc94221f",
+    "ci_status": "passed",
+    "ci_runs": [
+      {
+        "id": 36416543900,
+        "name": "Verify",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/abhijith-abhii/notemesh/actions/runs/36416543900"
+      }
+    ],
+    "ci_verified_commit": "013201031e547e97d05f04028f9aa1441de88c89",
+    "release_commit": "6267e3ac6535633f39132753b8b98a79bc94221f"
+  },
+  {
+    "id": 3,
+    "category": "software-engineering",
+    "slug": "repo-radar",
+    "name": "Repo Radar",
+    "problem": "Understand public repository activity",
+    "target_user": "Job seekers and maintainers",
+    "features": [
+      "GitHub pagination",
+      "cached snapshots",
+      "contributor/issue trends",
+      "offline sample"
+    ],
+    "stack": "Python \u00b7 Flask",
+    "data": "GitHub REST API; labeled fixture",
+    "acceptance": "Fetch public repository; rate-limit errors; charts reconcile",
+    "flagship": false,
+    "local_path": "/Users/rogue/Documents/Codex/2026-09-28/files-pasted-by-the-user-build/outputs/career-portfolio/software-engineering/repo-radar",
+    "repository": "https://github.com/abhijith-abhii/repo-radar",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "blockers": [],
+    "source_idea": "GitHub Activity Visualizer",
+    "source_verified": true,
+    "intended_repository": "https://github.com/abhijith-abhii/repo-radar",
+    "test_count": 10,
+    "verification_limits": [],
+    "branch": "main",
+    "commit": "5b67a6bab02947cf0b42226e4761f795df8acd9b",
+    "ci_status": "passed",
+    "ci_runs": [
+      {
+        "id": 36416558319,
+        "name": "Verify",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/abhijith-abhii/repo-radar/actions/runs/36416558319"
+      }
+    ],
+    "ci_verified_commit": "bd421634d8aa422d7a4765865c4321d28b3a923a",
+    "release_commit": "5b67a6bab02947cf0b42226e4761f795df8acd9b"
+  },
+  {
+    "id": 4,
+    "category": "software-engineering",
+    "slug": "tabharbor",
+    "name": "TabHarbor",
+    "problem": "Organize crowded browser sessions",
+    "target_user": "Students and developers",
+    "features": [
+      "Domain grouping",
+      "saved workspaces",
+      "focus timer",
+      "duplicate preview"
+    ],
+    "stack": "Chrome MV3 \u00b7 JavaScript",
+    "data": "Local browser tabs only",
+    "acceptance": "Group, save, restore, deduplicate with confirmation; test logic",
+    "flagship": false,
+    "local_path": "/Users/rogue/Documents/Codex/2026-09-28/files-pasted-by-the-user-build/outputs/career-portfolio/software-engineering/tabharbor",
+    "repository": "https://github.com/abhijith-abhii/tabharbor",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "blockers": [],
+    "source_idea": "Browser Tab Manager & Focus Extension",
+    "source_verified": true,
+    "intended_repository": "https://github.com/abhijith-abhii/tabharbor",
+    "test_count": 15,
+    "verification_limits": [
+      "Verified with bundled Chromium on Linux CI; Chrome Web Store publication is not included."
+    ],
+    "branch": "main",
+    "commit": "bcfb1f3dee5c4cfc45d94ecb26195094e58f3a1c",
+    "ci_status": "passed",
+    "ci_runs": [
+      {
+        "id": 36416828703,
+        "name": "Extension tests",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/abhijith-abhii/tabharbor/actions/runs/36416828703"
+      }
+    ],
+    "ci_verified_commit": "782b7bbc64e6fd129ca0d8b872377313261e4ee9",
+    "release_commit": "bcfb1f3dee5c4cfc45d94ecb26195094e58f3a1c"
+  },
+  {
+    "id": 5,
+    "category": "software-engineering",
+    "slug": "upstream-lab",
+    "name": "Upstream Lab",
+    "problem": "Reproduce and improve an open-source behavior",
+    "target_user": "Open-source reviewers",
+    "features": [
+      "Pinned upstream",
+      "failing regression",
+      "patch",
+      "isolated reproduction"
+    ],
+    "stack": "Python \u00b7 pytest",
+    "data": "Attributed upstream source",
+    "acceptance": "Before/after test evidence; unsubmitted review-ready patch",
+    "flagship": false,
+    "local_path": "/Users/rogue/Documents/Codex/2026-09-28/files-pasted-by-the-user-build/outputs/career-portfolio/software-engineering/upstream-lab",
+    "repository": "https://github.com/abhijith-abhii/upstream-lab",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "blockers": [],
+    "source_idea": "Open Source Contribution",
+    "source_verified": true,
+    "intended_repository": "https://github.com/abhijith-abhii/upstream-lab",
+    "test_count": 10,
+    "additional_checks": "Upstream suite: 125 passed, 1 skipped",
+    "verification_limits": [],
+    "branch": "main",
+    "commit": "bffab2e95588c9d6871d71a50e9fe3e7c2e6d51c",
+    "ci_status": "passed",
+    "ci_runs": [
+      {
+        "id": 36416581954,
+        "name": "Reproduce upstream regression",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/abhijith-abhii/upstream-lab/actions/runs/36416581954"
+      }
+    ],
+    "ci_verified_commit": "7f5d2a74b825577dc992fae29af356ad8cc18fdb",
+    "release_commit": "bffab2e95588c9d6871d71a50e9fe3e7c2e6d51c"
+  },
+  {
+    "id": 6,
+    "category": "data-science-ml",
+    "slug": "paylens",
+    "name": "PayLens",
+    "problem": "Explore salary estimates and uncertainty",
+    "target_user": "Career researchers",
+    "features": [
+      "Validated data",
+      "baseline",
+      "train/test split",
+      "prediction interval",
+      "feature controls"
+    ],
+    "stack": "scikit-learn \u00b7 Flask",
+    "data": "Transparent synthetic compensation sample",
+    "acceptance": "Holdout MAE; leakage checks; usable prediction UI",
+    "flagship": false,
+    "local_path": "/Users/rogue/Documents/Codex/2026-09-28/files-pasted-by-the-user-build/outputs/career-portfolio/data-science-ml/paylens",
+    "repository": "https://github.com/abhijith-abhii/paylens",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "blockers": [],
+    "source_idea": "Employee Salary Prediction",
+    "source_verified": true,
+    "intended_repository": "https://github.com/abhijith-abhii/paylens",
+    "test_count": 10,
+    "verification_limits": [],
+    "branch": "main",
+    "commit": "0006ee30c80f0b6b73cf033655ed830d326345d4",
+    "ci_status": "passed",
+    "ci_runs": [
+      {
+        "id": 36416593927,
+        "name": "Verify",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/abhijith-abhii/paylens/actions/runs/36416593927"
+      }
+    ],
+    "ci_verified_commit": "d42bb0aaac359011806491221ec08ce669f0f30a",
+    "release_commit": "0006ee30c80f0b6b73cf033655ed830d326345d4"
+  },
+  {
+    "id": 7,
+    "category": "data-science-ml",
+    "slug": "retention-studio",
+    "name": "Retention Studio",
+    "problem": "Prioritize reviewable churn retention work",
+    "target_user": "Customer success analysts",
+    "features": [
+      "Calibrated models",
+      "eligibility rules",
+      "budget",
+      "audited task queue"
+    ],
+    "stack": "pandas \u00b7 scikit-learn \u00b7 Flask",
+    "data": "IBM fictional telecom sample",
+    "acceptance": "Clean bootstrap; full tests; independent holdout metrics",
+    "flagship": true,
+    "local_path": "/Users/rogue/Documents/Codex/2026-09-28/files-pasted-by-the-user-build/outputs/career-portfolio/data-science-ml/retention-studio",
+    "repository": "https://github.com/abhijith-abhii/retention-studio",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "blockers": [],
+    "source_idea": "Customer Churn Prediction",
+    "source_verified": true,
+    "intended_repository": "https://github.com/abhijith-abhii/retention-studio",
+    "test_count": 27,
+    "verification_limits": [],
+    "branch": "main",
+    "commit": "6b9b448486f2127cd0be219e2f1486108b3cc806",
+    "ci_status": "passed",
+    "ci_runs": [
+      {
+        "id": 36416608228,
+        "name": "Verify portfolio project",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/abhijith-abhii/retention-studio/actions/runs/36416608228"
+      }
+    ],
+    "ci_verified_commit": "c0cb83fc58f158ec094eec1d36b4b18ad9e3c655",
+    "release_commit": "6b9b448486f2127cd0be219e2f1486108b3cc806"
+  },
+  {
+    "id": 8,
+    "category": "data-science-ml",
+    "slug": "courtcraft",
+    "name": "CourtCraft",
+    "problem": "Compare basketball performance fairly",
+    "target_user": "Sports analysts",
+    "features": [
+      "Possession normalization",
+      "shrinkage",
+      "uncertainty",
+      "player comparisons"
+    ],
+    "stack": "pandas \u00b7 scipy \u00b7 Flask",
+    "data": "Authored synthetic box scores",
+    "acceptance": "Validate possessions and minutes; reproducible rankings",
+    "flagship": false,
+    "local_path": "/Users/rogue/Documents/Codex/2026-09-28/files-pasted-by-the-user-build/outputs/career-portfolio/data-science-ml/courtcraft",
+    "repository": "https://github.com/abhijith-abhii/courtcraft",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "blockers": [],
+    "source_idea": "Sports Analytics Deep Dive",
+    "source_verified": true,
+    "intended_repository": "https://github.com/abhijith-abhii/courtcraft",
+    "test_count": 8,
+    "verification_limits": [],
+    "branch": "main",
+    "commit": "7fbc60e978739d4b5602150e52c9fe64b00c9d2e",
+    "ci_status": "passed",
+    "ci_runs": [
+      {
+        "id": 36416624506,
+        "name": "Verify",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/abhijith-abhii/courtcraft/actions/runs/36416624506"
+      }
+    ],
+    "ci_verified_commit": "7f8e7473e1dde245d7a7e778d04587063ab8765b",
+    "release_commit": "7fbc60e978739d4b5602150e52c9fe64b00c9d2e"
+  },
+  {
+    "id": 9,
+    "category": "data-science-ml",
+    "slug": "ticket-tuner",
+    "name": "Ticket Tuner",
+    "problem": "Adapt a small model for support routing",
+    "target_user": "Support platform developers",
+    "features": [
+      "Fine-tuning",
+      "grouped splits",
+      "baseline",
+      "saved model",
+      "inference"
+    ],
+    "stack": "PyTorch \u00b7 Transformers",
+    "data": "Authored synthetic support corpus",
+    "acceptance": "Actual fine-tuning; held-out accuracy/F1; no template overlap",
+    "flagship": false,
+    "local_path": "/Users/rogue/Documents/Codex/2026-09-28/files-pasted-by-the-user-build/outputs/career-portfolio/data-science-ml/ticket-tuner",
+    "repository": "https://github.com/abhijith-abhii/ticket-tuner",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "blockers": [],
+    "source_idea": "Fine-Tuned LLM for a Niche Task",
+    "source_verified": true,
+    "intended_repository": "https://github.com/abhijith-abhii/ticket-tuner",
+    "test_count": 7,
+    "verification_limits": [],
+    "branch": "main",
+    "commit": "a5cdc54aea20fc7332721ce16b3d8edbe412ebcb",
+    "ci_status": "passed",
+    "ci_runs": [
+      {
+        "id": 36416636372,
+        "name": "Verify",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/abhijith-abhii/ticket-tuner/actions/runs/36416636372"
+      }
+    ],
+    "ci_verified_commit": "4e49601e96050a3d9f78970bd64d3ba31e5e78ab",
+    "release_commit": "a5cdc54aea20fc7332721ce16b3d8edbe412ebcb"
+  },
+  {
+    "id": 10,
+    "category": "data-science-ml",
+    "slug": "spendmap",
+    "name": "SpendMap",
+    "problem": "Understand spending with editable categories",
+    "target_user": "Budget analysts",
+    "features": [
+      "Rule categories",
+      "merchant overrides",
+      "monthly trends",
+      "standardized clustering"
+    ],
+    "stack": "pandas \u00b7 scikit-learn \u00b7 Flask",
+    "data": "Synthetic transactions",
+    "acceptance": "Category changes propagate; cent reconciliation; cluster evaluation",
+    "flagship": false,
+    "local_path": "/Users/rogue/Documents/Codex/2026-09-28/files-pasted-by-the-user-build/outputs/career-portfolio/data-science-ml/spendmap",
+    "repository": "https://github.com/abhijith-abhii/spendmap",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "blockers": [],
+    "source_idea": "Personal Finance Spending Clusters",
+    "source_verified": true,
+    "intended_repository": "https://github.com/abhijith-abhii/spendmap",
+    "test_count": 10,
+    "verification_limits": [],
+    "branch": "main",
+    "commit": "22421997467be37172b9bef3f4c00b6f77abf935",
+    "ci_status": "passed",
+    "ci_runs": [
+      {
+        "id": 36416648695,
+        "name": "Verify",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/abhijith-abhii/spendmap/actions/runs/36416648695"
+      }
+    ],
+    "ci_verified_commit": "86d84c602b5eea7a7955ebeda8e80cb22b6cbf7e",
+    "release_commit": "22421997467be37172b9bef3f4c00b6f77abf935"
+  },
+  {
+    "id": 11,
+    "category": "ai-ml-engineering",
+    "slug": "docsearch",
+    "name": "DocSearch Atlas",
+    "problem": "Answer engineering runbook questions with evidence",
+    "target_user": "On-call engineers",
+    "features": [
+      "Incremental retrieval",
+      "citations",
+      "grounded answer composition",
+      "optional local LLM"
+    ],
+    "stack": "SQLite FTS5 \u00b7 Flask",
+    "data": "Authored runbooks; existing DocSearch code",
+    "acceptance": "Retrieval tests; citation checks; explicit extractive/local model mode",
+    "flagship": true,
+    "local_path": "/Users/rogue/Documents/Codex/2026-09-28/files-pasted-by-the-user-build/outputs/career-portfolio/ai-ml-engineering/docsearch",
+    "repository": "https://github.com/abhijith-abhii/docsearch",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "blockers": [],
+    "source_idea": "Domain-Specific RAG Application",
+    "source_verified": true,
+    "intended_repository": "https://github.com/abhijith-abhii/docsearch",
+    "test_count": 19,
+    "verification_limits": [],
+    "branch": "main",
+    "commit": "d5b3d7b6cbde94ce752197cf3cfd47e8d9590a24",
+    "ci_status": "passed",
+    "ci_runs": [
+      {
+        "id": 36417056669,
+        "name": "Verify",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/abhijith-abhii/docsearch/actions/runs/36417056669"
+      },
+      {
+        "id": 36417056521,
+        "name": "Verify project",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/abhijith-abhii/docsearch/actions/runs/36417056521"
+      }
+    ],
+    "ci_verified_commit": "894bed89556166a1b8bb8808eb89eaaa81f2f72c",
+    "release_commit": "d5b3d7b6cbde94ce752197cf3cfd47e8d9590a24"
+  },
+  {
+    "id": 12,
+    "category": "ai-ml-engineering",
+    "slug": "queryguard",
+    "name": "QueryGuard",
+    "problem": "Ask bounded sales questions safely",
+    "target_user": "Business analysts",
+    "features": [
+      "Five supported natural-language business intents",
+      "Parameterized SQL and visible execution plans",
+      "SQLite read-only access, authorizer and query budgets"
+    ],
+    "stack": "SQLite \u00b7 Flask",
+    "data": "Synthetic sales database",
+    "acceptance": "Reject writes/injection; bounded query; correct aggregations",
+    "flagship": false,
+    "local_path": "/Users/rogue/Documents/Codex/2026-09-28/files-pasted-by-the-user-build/outputs/career-portfolio/ai-ml-engineering/queryguard",
+    "repository": "https://github.com/abhijith-abhii/queryguard",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "blockers": [],
+    "source_idea": "Text-to-SQL Interface",
+    "source_verified": true,
+    "intended_repository": "https://github.com/abhijith-abhii/queryguard",
+    "test_count": 15,
+    "verification_limits": [],
+    "branch": "main",
+    "commit": "bacff82ab55f7ece384d44169ca3d9acb248faa6",
+    "ci_status": "passed",
+    "ci_runs": [
+      {
+        "id": 36416668094,
+        "name": "Verify",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/abhijith-abhii/queryguard/actions/runs/36416668094"
+      }
+    ],
+    "ci_verified_commit": "662fb1e842b0e3cdbd75427a9c800447847a5206",
+    "release_commit": "bacff82ab55f7ece384d44169ca3d9acb248faa6"
+  },
+  {
+    "id": 13,
+    "category": "ai-ml-engineering",
+    "slug": "release-pilot",
+    "name": "Release Pilot",
+    "problem": "Assemble a release review from local changes",
+    "target_user": "Small engineering teams",
+    "features": [
+      "Tool-planning agent",
+      "file checks",
+      "tests",
+      "diff summary",
+      "resumable audit"
+    ],
+    "stack": "Python \u00b7 Flask",
+    "data": "Local sample release workspace",
+    "acceptance": "Actual tools; bounded allowlist; failure stops promotion",
+    "flagship": false,
+    "local_path": "/Users/rogue/Documents/Codex/2026-09-28/files-pasted-by-the-user-build/outputs/career-portfolio/ai-ml-engineering/release-pilot",
+    "repository": "https://github.com/abhijith-abhii/release-pilot",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "blockers": [],
+    "source_idea": "AI Workflow Agent",
+    "source_verified": true,
+    "intended_repository": "https://github.com/abhijith-abhii/release-pilot",
+    "test_count": 10,
+    "verification_limits": [],
+    "branch": "main",
+    "commit": "b529d9baaed0d08c8cf7ee95cc7d81638ca75ca5",
+    "ci_status": "passed",
+    "ci_runs": [
+      {
+        "id": 36416680523,
+        "name": "Verify",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/abhijith-abhii/release-pilot/actions/runs/36416680523"
+      }
+    ],
+    "ci_verified_commit": "3a97aa06561150c4a86b8c3c91d11632ce0a6f2d",
+    "release_commit": "b529d9baaed0d08c8cf7ee95cc7d81638ca75ca5"
+  },
+  {
+    "id": 14,
+    "category": "ai-ml-engineering",
+    "slug": "evalbench",
+    "name": "EvalBench",
+    "problem": "Compare model answers using repeatable evidence",
+    "target_user": "AI engineers",
+    "features": [
+      "Dataset validation",
+      "local endpoint adapters",
+      "scoring",
+      "paired bootstrap",
+      "cost logs"
+    ],
+    "stack": "Python \u00b7 Flask",
+    "data": "Authored QA cases; explicit recorded responses",
+    "acceptance": "Run evaluator; paired stats; missing integrations visible",
+    "flagship": false,
+    "local_path": "/Users/rogue/Documents/Codex/2026-09-28/files-pasted-by-the-user-build/outputs/career-portfolio/ai-ml-engineering/evalbench",
+    "repository": "https://github.com/abhijith-abhii/evalbench",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "blockers": [],
+    "source_idea": "LLM Evaluation Platform",
+    "source_verified": true,
+    "intended_repository": "https://github.com/abhijith-abhii/evalbench",
+    "test_count": 7,
+    "verification_limits": [],
+    "branch": "main",
+    "commit": "3d2d71242c886ad90cf82f1ea9310747ef82cb7e",
+    "ci_status": "passed",
+    "ci_runs": [
+      {
+        "id": 36416690903,
+        "name": "Verify",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/abhijith-abhii/evalbench/actions/runs/36416690903"
+      }
+    ],
+    "ci_verified_commit": "1a0cadf702ec390f65916262cabfa9b87d19daed",
+    "release_commit": "3d2d71242c886ad90cf82f1ea9310747ef82cb7e"
+  },
+  {
+    "id": 15,
+    "category": "ai-ml-engineering",
+    "slug": "shelfmatch",
+    "name": "ShelfMatch",
+    "problem": "Find products with text and visual constraints",
+    "target_user": "Catalog users",
+    "features": [
+      "Text and image descriptor retrieval",
+      "Weighted multimodal similarity and material filtering",
+      "Original reproducible swatches and score explanations"
+    ],
+    "stack": "Pillow \u00b7 scikit-learn \u00b7 Flask",
+    "data": "Authored product cards and images",
+    "acceptance": "Text/image queries; deterministic rankings; weight controls",
+    "flagship": false,
+    "local_path": "/Users/rogue/Documents/Codex/2026-09-28/files-pasted-by-the-user-build/outputs/career-portfolio/ai-ml-engineering/shelfmatch",
+    "repository": "https://github.com/abhijith-abhii/shelfmatch",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "blockers": [],
+    "source_idea": "Multimodal AI Product",
+    "source_verified": true,
+    "intended_repository": "https://github.com/abhijith-abhii/shelfmatch",
+    "test_count": 12,
+    "verification_limits": [],
+    "branch": "main",
+    "commit": "c6b852a7ec89dd970c66953eb6cdcbf5c14b5f2c",
+    "ci_status": "passed",
+    "ci_runs": [
+      {
+        "id": 36416702070,
+        "name": "Verify",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/abhijith-abhii/shelfmatch/actions/runs/36416702070"
+      }
+    ],
+    "ci_verified_commit": "56fbc6d9d32b17344732e860f2795ec4df584b8f",
+    "release_commit": "c6b852a7ec89dd970c66953eb6cdcbf5c14b5f2c"
+  },
+  {
+    "id": 16,
+    "category": "cloud-devops",
+    "slug": "shipyard",
+    "name": "Shipyard",
+    "problem": "Ship a health-checked service through CI",
+    "target_user": "Junior platform engineers",
+    "features": [
+      "Container build",
+      "non-root app",
+      "CI tests",
+      "smoke deployment",
+      "rollback notes"
+    ],
+    "stack": "Docker \u00b7 GitHub Actions \u00b7 Flask",
+    "data": "Local service; temporary CI containers",
+    "acceptance": "Build/run container; health and smoke tests; verified CI",
+    "flagship": true,
+    "local_path": "/Users/rogue/Documents/Codex/2026-09-28/files-pasted-by-the-user-build/outputs/career-portfolio/cloud-devops/shipyard",
+    "repository": "https://github.com/abhijith-abhii/shipyard",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "blockers": [],
+    "source_idea": "Container delivery pipeline",
+    "source_verified": false,
+    "intended_repository": "https://github.com/abhijith-abhii/shipyard",
+    "source_basis": "User authorized independent Cloud/DevOps selection for job-market relevance",
+    "test_count": 9,
+    "verification_limits": [
+      "Actual temporary CI container verified; no continuously hosted public service or production rollout."
+    ],
+    "selection_authority": "User authorized original Cloud/DevOps choices based on the job market; absent from visible Instagram source.",
+    "branch": "main",
+    "commit": "9a958a58d26ea49908fb62870420ec32ae1a0f07",
+    "ci_status": "passed",
+    "ci_runs": [
+      {
+        "id": 36416088236,
+        "name": "Container delivery",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/abhijith-abhii/shipyard/actions/runs/36416088236"
+      }
+    ],
+    "ci_verified_commit": "ed0944c3839f5c11fc26cb82619b9fe558c46df9",
+    "release_commit": "9a958a58d26ea49908fb62870420ec32ae1a0f07"
+  },
+  {
+    "id": 17,
+    "category": "cloud-devops",
+    "slug": "aws-network-infrastructure-troubleshooting-lab",
+    "name": "Network Foundry",
+    "problem": "Reproduce a segmented AWS network safely",
+    "target_user": "Cloud engineering learners",
+    "features": [
+      "Existing Terraform modules",
+      "mock-provider tests",
+      "plan guidance",
+      "local validation"
+    ],
+    "stack": "Terraform \u00b7 Python",
+    "data": "AWS configuration; no paid apply",
+    "acceptance": "Terraform format/validate/test; deployed status explicit",
+    "flagship": false,
+    "local_path": "/Users/rogue/Documents/Codex/2026-09-28/files-pasted-by-the-user-build/outputs/career-portfolio/cloud-devops/aws-network-infrastructure-troubleshooting-lab",
+    "repository": "https://github.com/abhijith-abhii/aws-network-infrastructure-troubleshooting-lab",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "blockers": [],
+    "source_idea": "AWS network troubleshooting lab",
+    "source_verified": false,
+    "intended_repository": "https://github.com/abhijith-abhii/aws-network-infrastructure-troubleshooting-lab",
+    "source_basis": "User authorized independent Cloud/DevOps selection for job-market relevance",
+    "test_count": 16,
+    "additional_checks": "Terraform mock tests: 12 passed",
+    "verification_limits": [
+      "No AWS resources deployed; only configuration, Python and mock-provider checks executed."
+    ],
+    "selection_authority": "User authorized original Cloud/DevOps choices based on the job market; absent from visible Instagram source.",
+    "branch": "main",
+    "commit": "b7a453c456a0ff03574bf915f8f309cc36319b38",
+    "ci_status": "passed",
+    "ci_runs": [
+      {
+        "id": 36416454279,
+        "name": "Credential-free static checks",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/abhijith-abhii/aws-network-infrastructure-troubleshooting-lab/actions/runs/36416454279"
+      }
+    ],
+    "ci_verified_commit": "5b85615ae6ce51c8f276d2d1b5113316ee25bdd6",
+    "release_commit": "b7a453c456a0ff03574bf915f8f309cc36319b38"
+  },
+  {
+    "id": 18,
+    "category": "cloud-devops",
+    "slug": "costcompass",
+    "name": "CostCompass",
+    "problem": "Explain AWS cost drivers and review opportunities",
+    "target_user": "FinOps analysts",
+    "features": [
+      "CUR-style ingestion",
+      "anomaly detection",
+      "allocation gaps",
+      "bounded scenarios"
+    ],
+    "stack": "pandas \u00b7 Flask",
+    "data": "Synthetic AWS billing rows",
+    "acceptance": "Totals reconcile; no fabricated savings; invalid costs rejected",
+    "flagship": false,
+    "local_path": "/Users/rogue/Documents/Codex/2026-09-28/files-pasted-by-the-user-build/outputs/career-portfolio/cloud-devops/costcompass",
+    "repository": "https://github.com/abhijith-abhii/costcompass",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "blockers": [],
+    "source_idea": "Cloud cost analysis",
+    "source_verified": false,
+    "intended_repository": "https://github.com/abhijith-abhii/costcompass",
+    "source_basis": "User authorized independent Cloud/DevOps selection for job-market relevance",
+    "test_count": 8,
+    "verification_limits": [],
+    "selection_authority": "User authorized original Cloud/DevOps choices based on the job market; absent from visible Instagram source.",
+    "branch": "main",
+    "commit": "30e4bc233fbdadc201a28f1ad65e057224623ac3",
+    "ci_status": "passed",
+    "ci_runs": [
+      {
+        "id": 36416714046,
+        "name": "Verify",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/abhijith-abhii/costcompass/actions/runs/36416714046"
+      }
+    ],
+    "ci_verified_commit": "dbbfad960f82f6ce5743af7ada37e0d6c5e57175",
+    "release_commit": "30e4bc233fbdadc201a28f1ad65e057224623ac3"
+  },
+  {
+    "id": 19,
+    "category": "cloud-devops",
+    "slug": "failover-forge",
+    "name": "Failover Forge",
+    "problem": "Measure local recovery under service failure",
+    "target_user": "Reliability learners",
+    "features": [
+      "Two real local HTTP processes",
+      "Client-side fallback after primary termination",
+      "Measured restart-to-ready evidence and cleanup"
+    ],
+    "stack": "Python \u00b7 HTTP subprocesses",
+    "data": "Local synthetic service traffic",
+    "acceptance": "Kill primary; observe secondary; recover; measured timings",
+    "flagship": false,
+    "local_path": "/Users/rogue/Documents/Codex/2026-09-28/files-pasted-by-the-user-build/outputs/career-portfolio/cloud-devops/failover-forge",
+    "repository": "https://github.com/abhijith-abhii/failover-forge",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "blockers": [],
+    "source_idea": "Service failover and recovery experiment",
+    "source_verified": false,
+    "intended_repository": "https://github.com/abhijith-abhii/failover-forge",
+    "source_basis": "User authorized independent Cloud/DevOps selection for job-market relevance",
+    "test_count": 5,
+    "verification_limits": [],
+    "selection_authority": "User authorized original Cloud/DevOps choices based on the job market; absent from visible Instagram source.",
+    "branch": "main",
+    "commit": "aaed557f02903e4e57013d271a2a5bca12c4cbad",
+    "ci_status": "passed",
+    "ci_runs": [
+      {
+        "id": 36416726742,
+        "name": "Verify",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/abhijith-abhii/failover-forge/actions/runs/36416726742"
+      }
+    ],
+    "ci_verified_commit": "c83c9d1381a3753bddefd7da55784fe637e349ec",
+    "release_commit": "aaed557f02903e4e57013d271a2a5bca12c4cbad"
+  },
+  {
+    "id": 20,
+    "category": "cloud-devops",
+    "slug": "scale-lab",
+    "name": "Scale Lab",
+    "problem": "Understand autoscaling under measured load",
+    "target_user": "Platform engineering learners",
+    "features": [
+      "Kubernetes deployment",
+      "HPA",
+      "probes",
+      "CPU load",
+      "kind CI"
+    ],
+    "stack": "Kubernetes \u00b7 kind \u00b7 Python",
+    "data": "Ephemeral local/CI cluster",
+    "acceptance": "Schema checks; real cluster readiness/HPA where runtime available",
+    "flagship": false,
+    "local_path": "/Users/rogue/Documents/Codex/2026-09-28/files-pasted-by-the-user-build/outputs/career-portfolio/cloud-devops/scale-lab",
+    "repository": "https://github.com/abhijith-abhii/scale-lab",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "blockers": [],
+    "source_idea": "Kubernetes autoscaling experiment",
+    "source_verified": false,
+    "intended_repository": "https://github.com/abhijith-abhii/scale-lab",
+    "source_basis": "User authorized independent Cloud/DevOps selection for job-market relevance",
+    "test_count": 12,
+    "verification_limits": [
+      "Actual kind cluster scaled from two to six available replicas; multi-node production operation and scale-down benchmarks are outside scope."
+    ],
+    "selection_authority": "User authorized original Cloud/DevOps choices based on the job market; absent from visible Instagram source.",
+    "branch": "main",
+    "commit": "a0ba57e8af793841db116f43553be102115fed7b",
+    "ci_status": "passed",
+    "ci_runs": [
+      {
+        "id": 36416473050,
+        "name": "Kubernetes autoscaling experiment",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/abhijith-abhii/scale-lab/actions/runs/36416473050"
+      }
+    ],
+    "ci_verified_commit": "2528536d124b2bc50e3d06e4727091d3d4fe9689",
+    "release_commit": "a0ba57e8af793841db116f43553be102115fed7b"
+  },
+  {
+    "id": 21,
+    "category": "data-analytics",
+    "slug": "margin-ledger",
+    "name": "Margin Ledger",
+    "problem": "Find product and return patterns with SQL",
+    "target_user": "Retail analysts",
+    "features": [
+      "Star schema",
+      "8 queries",
+      "reconciliation",
+      "business report"
+    ],
+    "stack": "SQLite \u00b7 Python \u00b7 Flask",
+    "data": "Synthetic retail orders",
+    "acceptance": "Grain checks; query checks; report regenerated",
+    "flagship": false,
+    "local_path": "/Users/rogue/Documents/Codex/2026-09-28/files-pasted-by-the-user-build/outputs/career-portfolio/data-analytics/margin-ledger",
+    "repository": "https://github.com/abhijith-abhii/margin-ledger",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "blockers": [],
+    "source_idea": "End-to-End SQL Analytics Project",
+    "source_verified": true,
+    "intended_repository": "https://github.com/abhijith-abhii/margin-ledger",
+    "test_count": 8,
+    "verification_limits": [],
+    "branch": "main",
+    "commit": "b60ec7247f5824e0adcdbbecd13db13100fad630",
+    "ci_status": "passed",
+    "ci_runs": [
+      {
+        "id": 36416738691,
+        "name": "Verify",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/abhijith-abhii/margin-ledger/actions/runs/36416738691"
+      }
+    ],
+    "ci_verified_commit": "8f447b6f340ea95e57330fef666dabccaccea913",
+    "release_commit": "b60ec7247f5824e0adcdbbecd13db13100fad630"
+  },
+  {
+    "id": 22,
+    "category": "data-analytics",
+    "slug": "journeymark",
+    "name": "JourneyMark",
+    "problem": "Compare marketing attribution assumptions",
+    "target_user": "Growth analysts",
+    "features": [
+      "First/last/linear/time-decay models",
+      "lookback",
+      "conversion reconciliation"
+    ],
+    "stack": "pandas \u00b7 Flask",
+    "data": "Synthetic touchpoint journeys",
+    "acceptance": "Credit sums to conversions; no causal lift claims",
+    "flagship": false,
+    "local_path": "/Users/rogue/Documents/Codex/2026-09-28/files-pasted-by-the-user-build/outputs/career-portfolio/data-analytics/journeymark",
+    "repository": "https://github.com/abhijith-abhii/journeymark",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "blockers": [],
+    "source_idea": "Marketing Attribution Model Comparison",
+    "source_verified": true,
+    "intended_repository": "https://github.com/abhijith-abhii/journeymark",
+    "test_count": 10,
+    "verification_limits": [],
+    "branch": "main",
+    "commit": "cc537828d8fbc4efbe792779dddd85febeffec0b",
+    "ci_status": "passed",
+    "ci_runs": [
+      {
+        "id": 36416752403,
+        "name": "Verify",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/abhijith-abhii/journeymark/actions/runs/36416752403"
+      }
+    ],
+    "ci_verified_commit": "5dbd0cc9b44d0cb9f5400bd26cbd8832edcdfd24",
+    "release_commit": "cc537828d8fbc4efbe792779dddd85febeffec0b"
+  },
+  {
+    "id": 23,
+    "category": "data-analytics",
+    "slug": "retail-supply-chain-control-tower",
+    "name": "Retail Control Tower",
+    "problem": "Explore business performance and inventory tradeoffs",
+    "target_user": "Operations managers",
+    "features": [
+      "Existing analytics",
+      "independent browser dashboard",
+      "filters",
+      "drilldown"
+    ],
+    "stack": "Python \u00b7 SQLite \u00b7 browser",
+    "data": "Existing synthetic fixture; provenance preserved",
+    "acceptance": "Runnable dashboard; filters reconcile; empty/error states",
+    "flagship": true,
+    "local_path": "/Users/rogue/Documents/Codex/2026-09-28/files-pasted-by-the-user-build/outputs/career-portfolio/data-analytics/retail-supply-chain-control-tower",
+    "repository": "https://github.com/abhijith-abhii/retail-supply-chain-control-tower",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "blockers": [],
+    "source_idea": "Business Question Dashboard",
+    "source_verified": true,
+    "intended_repository": "https://github.com/abhijith-abhii/retail-supply-chain-control-tower",
+    "test_count": 8,
+    "verification_limits": [],
+    "branch": "main",
+    "commit": "f01d46e66bc22629ed92138925aab71e26c8bf08",
+    "ci_status": "passed",
+    "ci_runs": [
+      {
+        "id": 36416839874,
+        "name": "Browser dashboard",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/abhijith-abhii/retail-supply-chain-control-tower/actions/runs/36416839874"
+      }
+    ],
+    "ci_verified_commit": "3a1afdab4c18c5e1e7342ec8bd794db68fb7e28f",
+    "release_commit": "f01d46e66bc22629ed92138925aab71e26c8bf08"
+  },
+  {
+    "id": 24,
+    "category": "data-analytics",
+    "slug": "experiment-lens",
+    "name": "Experiment Lens",
+    "problem": "Audit and interpret an A/B experiment",
+    "target_user": "Product analysts",
+    "features": [
+      "SRM checks",
+      "intervals",
+      "lift",
+      "power",
+      "stopping caveats"
+    ],
+    "stack": "scipy \u00b7 Flask",
+    "data": "Seeded randomized synthetic experiment",
+    "acceptance": "Known statistical cases; denominator checks; no peeking claims",
+    "flagship": false,
+    "local_path": "/Users/rogue/Documents/Codex/2026-09-28/files-pasted-by-the-user-build/outputs/career-portfolio/data-analytics/experiment-lens",
+    "repository": "https://github.com/abhijith-abhii/experiment-lens",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "blockers": [],
+    "source_idea": "A/B Testing Statistical Analysis",
+    "source_verified": true,
+    "intended_repository": "https://github.com/abhijith-abhii/experiment-lens",
+    "test_count": 9,
+    "verification_limits": [],
+    "branch": "main",
+    "commit": "52d0e42168649eb7382b24f4e27d7e8f937ebad3",
+    "ci_status": "passed",
+    "ci_runs": [
+      {
+        "id": 36416850227,
+        "name": "Verify",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/abhijith-abhii/experiment-lens/actions/runs/36416850227"
+      }
+    ],
+    "ci_verified_commit": "f9065caeff69ab28b3e00a582d931884822ce77b",
+    "release_commit": "52d0e42168649eb7382b24f4e27d7e8f937ebad3"
+  },
+  {
+    "id": 25,
+    "category": "data-analytics",
+    "slug": "energy-brief",
+    "name": "Energy Brief",
+    "problem": "Research electricity generation trends reproducibly",
+    "target_user": "Industry researchers",
+    "features": [
+      "Pinned public data",
+      "trend decomposition",
+      "concentration",
+      "report"
+    ],
+    "stack": "Python \u00b7 pandas \u00b7 Flask",
+    "data": "Our World in Data energy data / cited upstream",
+    "acceptance": "Data provenance; missingness; report from actual snapshot",
+    "flagship": false,
+    "local_path": "/Users/rogue/Documents/Codex/2026-09-28/files-pasted-by-the-user-build/outputs/career-portfolio/data-analytics/energy-brief",
+    "repository": "https://github.com/abhijith-abhii/energy-brief",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "blockers": [],
+    "source_idea": "Data-Driven Industry Report",
+    "source_verified": true,
+    "intended_repository": "https://github.com/abhijith-abhii/energy-brief",
+    "test_count": 10,
+    "verification_limits": [],
+    "branch": "main",
+    "commit": "166f8282e7f5a310a6058ae67c0f3f10c9ce61de",
+    "ci_status": "passed",
+    "ci_runs": [
+      {
+        "id": 36416862553,
+        "name": "Verify",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/abhijith-abhii/energy-brief/actions/runs/36416862553"
+      }
+    ],
+    "ci_verified_commit": "fa7e701abdfe444a5595702cb767110191f7289b",
+    "release_commit": "166f8282e7f5a310a6058ae67c0f3f10c9ce61de"
+  }
+]

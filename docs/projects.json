@@ -1,0 +1,4619 @@
+[
+  {
+    "id": 1,
+    "name": "LinkScope",
+    "slug": "linkscope",
+    "category": "software-engineering",
+    "problem": "URL shortener with campaign analytics",
+    "features": [
+      "Validated links",
+      "expiring aliases",
+      "privacy-preserving click counts",
+      "CSV export"
+    ],
+    "stack": "Flask \u00b7 SQLite",
+    "data": "Synthetic links; local click events",
+    "source_idea": "Link Shortener with Analytics Dashboard",
+    "test_count": 15,
+    "flagship": true,
+    "verification_limits": [],
+    "repository": "https://github.com/abhijith-abhii/linkscope",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "ci_status": "passed",
+    "category_label": "Software Engineering",
+    "screenshot": "assets/linkscope.png",
+    "recorded_run": {
+      "bars": [],
+      "chart_title": "Clicks by UTC day",
+      "metrics": {
+        "Active": 1,
+        "Clicks": 0,
+        "Links": 1
+      },
+      "rows": [
+        {
+          "alias": "demo-84168000",
+          "campaign": "Demonstration",
+          "clicks": 0,
+          "created": "2026-09-28T11:11:41.585862+00:00",
+          "enabled": 1,
+          "expires": "2026-10-28T11:11:41.585866+00:00",
+          "url": "https://example.org/docs"
+        }
+      ]
+    },
+    "local_demo": "https://github.com/abhijith-abhii/linkscope/blob/main/LEARNING_GUIDE.md",
+    "verification": "https://github.com/abhijith-abhii/linkscope/blob/main/VERIFICATION.md"
+  },
+  {
+    "id": 2,
+    "name": "NoteMesh",
+    "slug": "notemesh",
+    "category": "software-engineering",
+    "problem": "Shared meeting notes without lost edits",
+    "features": [
+      "Live saved-note synchronization with SSE",
+      "Optimistic revision checks and preserved conflict drafts",
+      "Persistent revision history and Markdown export"
+    ],
+    "stack": "Flask \u00b7 SQLite \u00b7 SSE",
+    "data": "Local shared notes",
+    "source_idea": "Real-Time Collaborative Notes App",
+    "test_count": 13,
+    "flagship": false,
+    "verification_limits": [],
+    "repository": "https://github.com/abhijith-abhii/notemesh",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "ci_status": "passed",
+    "category_label": "Software Engineering",
+    "screenshot": "assets/notemesh.png",
+    "recorded_run": {
+      "author": "Demo reviewer",
+      "body": "Meeting notes\n\n- Reproduce the workflow\n- Explain optimistic revisions\n- Review conflict handling",
+      "revision": 1,
+      "room": "verification",
+      "updated": "2026-09-28T11:11:41.592586+00:00"
+    },
+    "local_demo": "https://github.com/abhijith-abhii/notemesh/blob/main/LEARNING_GUIDE.md",
+    "verification": "https://github.com/abhijith-abhii/notemesh/blob/main/VERIFICATION.md"
+  },
+  {
+    "id": 3,
+    "name": "Repo Radar",
+    "slug": "repo-radar",
+    "category": "software-engineering",
+    "problem": "Understand public repository activity",
+    "features": [
+      "GitHub pagination",
+      "cached snapshots",
+      "contributor/issue trends",
+      "offline sample"
+    ],
+    "stack": "Python \u00b7 Flask",
+    "data": "GitHub REST API; labeled fixture",
+    "source_idea": "GitHub Activity Visualizer",
+    "test_count": 10,
+    "flagship": false,
+    "verification_limits": [],
+    "repository": "https://github.com/abhijith-abhii/repo-radar",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "ci_status": "passed",
+    "category_label": "Software Engineering",
+    "screenshot": "assets/repo-radar.png",
+    "recorded_run": {
+      "bars": [
+        {
+          "label": "2026-09-01",
+          "value": 6
+        },
+        {
+          "label": "2026-09-02",
+          "value": 5
+        },
+        {
+          "label": "2026-09-03",
+          "value": 5
+        },
+        {
+          "label": "2026-09-04",
+          "value": 5
+        },
+        {
+          "label": "2026-09-05",
+          "value": 5
+        },
+        {
+          "label": "2026-09-06",
+          "value": 5
+        },
+        {
+          "label": "2026-09-07",
+          "value": 5
+        }
+      ],
+      "chart_title": "Commits by author timestamp (UTC)",
+      "details": {
+        "limits": "First 3 pages per endpoint; not complete historical coverage",
+        "repository": "pallets/flask",
+        "retrieved_at": "2026-09-01T12:00:00Z"
+      },
+      "metrics": {
+        "Commits sampled": 36,
+        "Issues sampled": 15,
+        "Linked/unlinked identities": 3,
+        "Open in sample": 10
+      },
+      "notice": "Synthetic sample: counts demonstrate the analysis and are not claims about pallets/flask",
+      "rows": [
+        {
+          "commits": 12,
+          "contributor": "sample-ada"
+        },
+        {
+          "commits": 12,
+          "contributor": "sample-lin"
+        },
+        {
+          "commits": 12,
+          "contributor": "sample-sam"
+        }
+      ]
+    },
+    "local_demo": "https://github.com/abhijith-abhii/repo-radar/blob/main/LEARNING_GUIDE.md",
+    "verification": "https://github.com/abhijith-abhii/repo-radar/blob/main/VERIFICATION.md"
+  },
+  {
+    "id": 4,
+    "name": "TabHarbor",
+    "slug": "tabharbor",
+    "category": "software-engineering",
+    "problem": "Organize crowded browser sessions",
+    "features": [
+      "Domain grouping",
+      "saved workspaces",
+      "focus timer",
+      "duplicate preview"
+    ],
+    "stack": "Chrome MV3 \u00b7 JavaScript",
+    "data": "Local browser tabs only",
+    "source_idea": "Browser Tab Manager & Focus Extension",
+    "test_count": 15,
+    "flagship": false,
+    "verification_limits": [
+      "Verified with bundled Chromium on Linux CI; Chrome Web Store publication is not included."
+    ],
+    "repository": "https://github.com/abhijith-abhii/tabharbor",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "ci_status": "passed",
+    "category_label": "Software Engineering",
+    "screenshot": "assets/tabharbor.png",
+    "local_demo": "https://github.com/abhijith-abhii/tabharbor/blob/main/LEARNING_GUIDE.md",
+    "verification": "https://github.com/abhijith-abhii/tabharbor/blob/main/VERIFICATION.md"
+  },
+  {
+    "id": 5,
+    "name": "Upstream Lab",
+    "slug": "upstream-lab",
+    "category": "software-engineering",
+    "problem": "Reproduce and improve an open-source behavior",
+    "features": [
+      "Pinned upstream",
+      "failing regression",
+      "patch",
+      "isolated reproduction"
+    ],
+    "stack": "Python \u00b7 pytest",
+    "data": "Attributed upstream source",
+    "source_idea": "Open Source Contribution",
+    "test_count": 10,
+    "flagship": false,
+    "verification_limits": [],
+    "repository": "https://github.com/abhijith-abhii/upstream-lab",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "ci_status": "passed",
+    "category_label": "Software Engineering",
+    "recorded_run": {
+      "upstream": {
+        "repository": "https://github.com/un33k/python-slugify.git",
+        "commit": "866401ea6b346d7575cf941bc73ad32a362e34aa",
+        "license": "MIT",
+        "scope": "CLI validation of invalid regular expressions",
+        "submission": "Not submitted; review-ready patch only"
+      },
+      "regression": {
+        "upstream_commit": "866401ea6b346d7575cf941bc73ad32a362e34aa",
+        "before_exit": 1,
+        "before": "FFFFF.....                                                               [100%]\n=================================== FAILURES ===================================\n_____________________ test_invalid_regex_is_usage_error[[] _____________________\n\npattern = '['\n\n    @pytest.mark.parametrize('pattern',['[','(','\\\\','a{2,1}','(?P<x>a)(?P<x>b)'])\n    def test_invalid_regex_is_usage_error(pattern):\n     r=invoke('--regex-pattern',pattern,'hello world')\n>    assert r.returncode==2\nE    assert 1 == 2\nE     +  where 1 = CompletedProcess(args=['/Users/rogue/Documents/Codex/2026-09-28/files-pasted-by-the-user-build/work/venv/bin/python', ...in _parse\\n    raise source.error(\"unterminated character set\",\\nre.error: unterminated character set at position 0\\n').returncode\n\ntests/test_cli_regression.py:11: AssertionError\n_____________________ test_invalid_regex_is_usage_error[(] _____________________\n\npattern = '('\n\n    @pytest.mark.parametrize('pattern',['[','(','\\\\','a{2,1}','(?P<x>a)(?P<x>b)'])\n    def test_invalid_regex_is_usage_error(pattern):\n     r=invoke('--regex-pattern',pattern,'hello world')\n>    assert r.returncode==2\nE    assert 1 == 2\nE     +  where 1 = CompletedProcess(args=['/Users/rogue/Documents/Codex/2026-09-28/files-pasted-by-the-user-build/work/venv/bin/python', ...aise source.error(\"missing ), unterminated subpattern\",\\nre.error: missing ), unterminated subpattern at position 0\\n').returncode\n\ntests/test_cli_regression.py:11: AssertionError\n____________________ test_invalid_regex_is_usage_error[\\\\] _____________________\n\npattern = '\\\\'\n\n    @pytest.mark.parametrize('pattern',['[','(','\\\\','a{2,1}','(?P<x>a)(?P<x>b)'])\n    def test_invalid_regex_is_usage_error(pattern):\n     r=invoke('--regex-pattern',pattern,'hello world')\n>    assert r.returncode==2\nE    assert 1 == 2\nE     +  where 1 = CompletedProcess(args=['/Users/rogue/Documents/Codex/2026-09-28/files-pasted-by-the-user-build/work/venv/bin/python', ...252, in __next\\n    raise error(\"bad escape (end of pattern)\",\\nre.error: bad escape (end of pattern) at position 0\\n').returncode\n\ntests/test_cli_regression.py:11: AssertionError\n__________________ test_invalid_regex_is_usage_error[a{2,1}] ___________________\n\npattern = 'a{2,1}'\n\n    @pytest.mark.parametrize('pattern',['[','(','\\\\','a{2,1}','(?P<x>a)(?P<x>b)'])\n    def test_invalid_regex_is_usage_error(pattern):\n     r=invoke('--regex-pattern',pattern,'hello world')\n>    assert r.returncode==2\nE    assert 1 == 2\nE     +  where 1 = CompletedProcess(args=['/Users/rogue/Documents/Codex/2026-09-28/files-pasted-by-the-user-build/work/venv/bin/python', ...aise source.error(\"min repeat greater than max repeat\",\\nre.error: min repeat greater than max repeat at position 2\\n').returncode\n\ntests/test_cli_regression.py:11: AssertionError\n_____________ test_invalid_regex_is_usage_error[(?P<x>a)(?P<x>b)] ______________\n\npattern = '(?P<x>a)(?P<x>b)'\n\n    @pytest.mark.parametrize('pattern',['[','(','\\\\','a{2,1}','(?P<x>a)(?P<x>b)'])\n    def test_invalid_regex_is_usage_error(pattern):\n     r=invoke('--regex-pattern',pattern,'hello world')\n>    assert r.returncode==2\nE    AssertionError: assert 1 == 2\nE     +  where 1 = CompletedProcess(args=['/Users/rogue/Documents/Codex/2026-09-28/files-pasted-by-the-user-build/work/venv/bin/python', ...rr.msg, len(name) + 1) from None\\nre.error: redefinition of group name \\'x\\' as group 2; was group 1 at position 12\\n').returncode\n\ntests/test_cli_regression.py:11: AssertionError\n=========================== short test summary info ============================\nFAILED tests/test_cli_regression.py::test_invalid_regex_is_usage_error[[] - a...\nFAILED tests/test_cli_regression.py::test_invalid_regex_is_usage_error[(] - a...\nFAILED tests/test_cli_regression.py::test_invalid_regex_is_usage_error[\\\\] - ...\nFAILED tests/test_cli_regression.py::test_invalid_regex_is_usage_error[a{2,1}]\nFAILED tests/test_cli_regression.py::test_invalid_regex_is_usage_error[(?P<x>a)(?P<x>b)]\n5 failed, 5 passed in 0.25s\n",
+        "after_exit": 0,
+        "after": "..........                                                               [100%]\n10 passed in 0.23s\n",
+        "submitted": false
+      }
+    },
+    "local_demo": "https://github.com/abhijith-abhii/upstream-lab/blob/main/LEARNING_GUIDE.md",
+    "verification": "https://github.com/abhijith-abhii/upstream-lab/blob/main/VERIFICATION.md"
+  },
+  {
+    "id": 6,
+    "name": "PayLens",
+    "slug": "paylens",
+    "category": "data-science-ml",
+    "problem": "Explore salary estimates and uncertainty",
+    "features": [
+      "Validated data",
+      "baseline",
+      "train/test split",
+      "prediction interval",
+      "feature controls"
+    ],
+    "stack": "scikit-learn \u00b7 Flask",
+    "data": "Transparent synthetic compensation sample",
+    "source_idea": "Employee Salary Prediction",
+    "test_count": 10,
+    "flagship": false,
+    "verification_limits": [],
+    "repository": "https://github.com/abhijith-abhii/paylens",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "ci_status": "passed",
+    "category_label": "Data Science / ML",
+    "screenshot": "assets/paylens.png",
+    "recorded_run": {
+      "bars": [
+        {
+          "label": "Median baseline MAE",
+          "value": 22305.38
+        },
+        {
+          "label": "Ridge MAE",
+          "value": 10142.43
+        }
+      ],
+      "details": {
+        "baseline_mae_usd": 22305.38,
+        "calibration_ids": [
+          "S0230",
+          "S0601",
+          "S1117",
+          "S0804",
+          "S0052",
+          "S1079",
+          "S0529",
+          "S0770",
+          "S0539",
+          "S0506",
+          "S0123",
+          "S1021",
+          "S0092",
+          "S0437",
+          "S0249",
+          "S0370",
+          "S0566",
+          "S0508",
+          "S0723",
+          "S1158",
+          "S0894",
+          "S0419",
+          "S0935",
+          "S0365",
+          "S0128",
+          "S0022",
+          "S0079",
+          "S0966",
+          "S0764",
+          "S1149",
+          "S1199",
+          "S0210",
+          "S0267",
+          "S0024",
+          "S0481",
+          "S0613",
+          "S1087",
+          "S0480",
+          "S0335",
+          "S0924",
+          "S0513",
+          "S0644",
+          "S0337",
+          "S0760",
+          "S0560",
+          "S0239",
+          "S0374",
+          "S0471",
+          "S0056",
+          "S0361",
+          "S1167",
+          "S0953",
+          "S0185",
+          "S0999",
+          "S0689",
+          "S0050",
+          "S0062",
+          "S0695",
+          "S0797",
+          "S0383",
+          "S0818",
+          "S0715",
+          "S1148",
+          "S1028",
+          "S1088",
+          "S0012",
+          "S0940",
+          "S0164",
+          "S0706",
+          "S0606",
+          "S0030",
+          "S0510",
+          "S0741",
+          "S0387",
+          "S0724",
+          "S1173",
+          "S1005",
+          "S0763",
+          "S0771",
+          "S1089",
+          "S1142",
+          "S0145",
+          "S1129",
+          "S0498",
+          "S0144",
+          "S0264",
+          "S0896",
+          "S0485",
+          "S0296",
+          "S0918",
+          "S0351",
+          "S0669",
+          "S0276",
+          "S0756",
+          "S0578",
+          "S0610",
+          "S0648",
+          "S0040",
+          "S0583",
+          "S0759",
+          "S0099",
+          "S0995",
+          "S0869",
+          "S0675",
+          "S0047",
+          "S0487",
+          "S0985",
+          "S0794",
+          "S0194",
+          "S0602",
+          "S1153",
+          "S0310",
+          "S0963",
+          "S0429",
+          "S0282",
+          "S0460",
+          "S0872",
+          "S0677",
+          "S0254",
+          "S0026",
+          "S0585",
+          "S0524",
+          "S0702",
+          "S1019",
+          "S1144",
+          "S0215",
+          "S0765",
+          "S0459",
+          "S0283",
+          "S0552",
+          "S0245",
+          "S0751",
+          "S0925",
+          "S1177",
+          "S0540",
+          "S0841",
+          "S1074",
+          "S1007",
+          "S0821",
+          "S0204",
+          "S0799",
+          "S0598",
+          "S0708",
+          "S0113",
+          "S0450",
+          "S0828",
+          "S1190",
+          "S0416",
+          "S0083",
+          "S0377",
+          "S0202",
+          "S0376",
+          "S0709",
+          "S0389",
+          "S0278",
+          "S0363",
+          "S0990",
+          "S0378",
+          "S0840",
+          "S0647",
+          "S1043",
+          "S0664",
+          "S0782",
+          "S0926",
+          "S0221",
+          "S1095",
+          "S0426",
+          "S0367",
+          "S1072",
+          "S0680",
+          "S0557",
+          "S0697",
+          "S0594",
+          "S1114",
+          "S0693",
+          "S0280",
+          "S0589",
+          "S0297",
+          "S0091",
+          "S1104",
+          "S0311",
+          "S0979",
+          "S0072",
+          "S0103",
+          "S0535",
+          "S0596",
+          "S0880",
+          "S0349",
+          "S0315",
+          "S0620",
+          "S0959",
+          "S1106",
+          "S0549",
+          "S0007",
+          "S0561",
+          "S1066",
+          "S0817",
+          "S0078",
+          "S1108",
+          "S0175",
+          "S0747",
+          "S0684",
+          "S0035",
+          "S0835",
+          "S0551",
+          "S1155",
+          "S0375",
+          "S0097",
+          "S1170",
+          "S0263",
+          "S0238",
+          "S0148",
+          "S0933",
+          "S0153",
+          "S0125",
+          "S0340",
+          "S0287",
+          "S0318",
+          "S1154",
+          "S0111",
+          "S1048",
+          "S0789",
+          "S0324",
+          "S1084",
+          "S0303",
+          "S0279",
+          "S0082",
+          "S0228",
+          "S0922",
+          "S1016",
+          "S0183",
+          "S0960",
+          "S1151",
+          "S0306",
+          "S0642",
+          "S0455",
+          "S0410",
+          "S1105",
+          "S1168",
+          "S0575"
+        ],
+        "data": "synthetic; no empirical labor-market validity",
+        "interval_coverage": 0.925,
+        "interval_radius_usd": 22493.38,
+        "split_sizes": {
+          "calibration": 240,
+          "test": 240,
+          "train": 720
+        },
+        "test_ids": [
+          "S0386",
+          "S0728",
+          "S0391",
+          "S0825",
+          "S0173",
+          "S0319",
+          "S0766",
+          "S0330",
+          "S0181",
+          "S0452",
+          "S0443",
+          "S0402",
+          "S0748",
+          "S0722",
+          "S0433",
+          "S0705",
+          "S0838",
+          "S0977",
+          "S0413",
+          "S1023",
+          "S0885",
+          "S0102",
+          "S1187",
+          "S0051",
+          "S0048",
+          "S0428",
+          "S1024",
+          "S0261",
+          "S0122",
+          "S0732",
+          "S0542",
+          "S0522",
+          "S0856",
+          "S0631",
+          "S0462",
+          "S0919",
+          "S0687",
+          "S0882",
+          "S0998",
+          "S0343",
+          "S0588",
+          "S0989",
+          "S0184",
+          "S0853",
+          "S0553",
+          "S0179",
+          "S0932",
+          "S0955",
+          "S0639",
+          "S0095",
+          "S0842",
+          "S0936",
+          "S0229",
+          "S0074",
+          "S0139",
+          "S0354",
+          "S1185",
+          "S0031",
+          "S0288",
+          "S0143",
+          "S1143",
+          "S0805",
+          "S1137",
+          "S1111",
+          "S0773",
+          "S0055",
+          "S0514",
+          "S0776",
+          "S0162",
+          "S0558",
+          "S0878",
+          "S0130",
+          "S0400",
+          "S0093",
+          "S1122",
+          "S0641",
+          "S0690",
+          "S0971",
+          "S0981",
+          "S1046",
+          "S0895",
+          "S0321",
+          "S0049",
+          "S0127",
+          "S0059",
+          "S1099",
+          "S0166",
+          "S0038",
+          "S1083",
+          "S0142",
+          "S0686",
+          "S0986",
+          "S1181",
+          "S1188",
+          "S0637",
+          "S1057",
+          "S0619",
+          "S1052",
+          "S1107",
+          "S1133",
+          "S0332",
+          "S0927",
+          "S1054",
+          "S0067",
+          "S1123",
+          "S0449",
+          "S0483",
+          "S0701",
+          "S1041",
+          "S0442",
+          "S1140",
+          "S0446",
+          "S0115",
+          "S0405",
+          "S0017",
+          "S0857",
+          "S0721",
+          "S0427",
+          "S0292",
+          "S0331",
+          "S0672",
+          "S0562",
+          "S1078",
+          "S0396",
+          "S0084",
+          "S0189",
+          "S1063",
+          "S0240",
+          "S0812",
+          "S1196",
+          "S0565",
+          "S0141",
+          "S0218",
+          "S0497",
+          "S0827",
+          "S0873",
+          "S1164",
+          "S0511",
+          "S0740",
+          "S0269",
+          "S0309",
+          "S1049",
+          "S0526",
+          "S0505",
+          "S0484",
+          "S0063",
+          "S0259",
+          "S0244",
+          "S1025",
+          "S1008",
+          "S0168",
+          "S0915",
+          "S0019",
+          "S0158",
+          "S0469",
+          "S0061",
+          "S0586",
+          "S0233",
+          "S0262",
+          "S0699",
+          "S0401",
+          "S0289",
+          "S1125",
+          "S0136",
+          "S0734",
+          "S0372",
+          "S1138",
+          "S0317",
+          "S1172",
+          "S0683",
+          "S0461",
+          "S1100",
+          "S0504",
+          "S0205",
+          "S1059",
+          "S0861",
+          "S0679",
+          "S0001",
+          "S1001",
+          "S1031",
+          "S1032",
+          "S1130",
+          "S0299",
+          "S0978",
+          "S0923",
+          "S0846",
+          "S0638",
+          "S0665",
+          "S0973",
+          "S0190",
+          "S0899",
+          "S0975",
+          "S0277",
+          "S0837",
+          "S0965",
+          "S0023",
+          "S0761",
+          "S0352",
+          "S0341",
+          "S0500",
+          "S0368",
+          "S0157",
+          "S0600",
+          "S0305",
+          "S0863",
+          "S0612",
+          "S1051",
+          "S0478",
+          "S0691",
+          "S1022",
+          "S0806",
+          "S1198",
+          "S0496",
+          "S0720",
+          "S0394",
+          "S0054",
+          "S0667",
+          "S0029",
+          "S1183",
+          "S1156",
+          "S0041",
+          "S0502",
+          "S0425",
+          "S1174",
+          "S0801",
+          "S0316",
+          "S0154",
+          "S1139",
+          "S1161",
+          "S0037",
+          "S0070",
+          "S0021",
+          "S0931",
+          "S0573",
+          "S0463",
+          "S0881",
+          "S0780",
+          "S1058",
+          "S0645",
+          "S0457"
+        ],
+        "test_mae_usd": 10142.43,
+        "test_r2": 0.7794,
+        "train_ids": [
+          "S0199",
+          "S0718",
+          "S0010",
+          "S0527",
+          "S0595",
+          "S0700",
+          "S0366",
+          "S0793",
+          "S1086",
+          "S0169",
+          "S0044",
+          "S0811",
+          "S1171",
+          "S0495",
+          "S0236",
+          "S1067",
+          "S0917",
+          "S0152",
+          "S0295",
+          "S1035",
+          "S0658",
+          "S0778",
+          "S0867",
+          "S0053",
+          "S0281",
+          "S0593",
+          "S1146",
+          "S0159",
+          "S0137",
+          "S0733",
+          "S0339",
+          "S0696",
+          "S0538",
+          "S0626",
+          "S0421",
+          "S0618",
+          "S0854",
+          "S1030",
+          "S0246",
+          "S1018",
+          "S0156",
+          "S0045",
+          "S1115",
+          "S0018",
+          "S0491",
+          "S0621",
+          "S0308",
+          "S1071",
+          "S0791",
+          "S0196",
+          "S0314",
+          "S0329",
+          "S0528",
+          "S0948",
+          "S0884",
+          "S0820",
+          "S0736",
+          "S0855",
+          "S0523",
+          "S0431",
+          "S1038",
+          "S0360",
+          "S1047",
+          "S0134",
+          "S0015",
+          "S0707",
+          "S0020",
+          "S0438",
+          "S0004",
+          "S0388",
+          "S0120",
+          "S0475",
+          "S0574",
+          "S1097",
+          "S0614",
+          "S0785",
+          "S0859",
+          "S0224",
+          "S0140",
+          "S0719",
+          "S0868",
+          "S0611",
+          "S0945",
+          "S0298",
+          "S1176",
+          "S0326",
+          "S0796",
+          "S0008",
+          "S0904",
+          "S0160",
+          "S0767",
+          "S0138",
+          "S0659",
+          "S1064",
+          "S0556",
+          "S0607",
+          "S1103",
+          "S1184",
+          "S1042",
+          "S0170",
+          "S0622",
+          "S1076",
+          "S0182",
+          "S1081",
+          "S0670",
+          "S0657",
+          "S0836",
+          "S0407",
+          "S0862",
+          "S0905",
+          "S0930",
+          "S0864",
+          "S0889",
+          "S0312",
+          "S0348",
+          "S0879",
+          "S0252",
+          "S0845",
+          "S0629",
+          "S0080",
+          "S0200",
+          "S0119",
+          "S1092",
+          "S0464",
+          "S1128",
+          "S0972",
+          "S0088",
+          "S0909",
+          "S0307",
+          "S0255",
+          "S0954",
+          "S0536",
+          "S0046",
+          "S0073",
+          "S0493",
+          "S1009",
+          "S0703",
+          "S0011",
+          "S0186",
+          "S0422",
+          "S0124",
+          "S1000",
+          "S0956",
+          "S1090",
+          "S0834",
+          "S0913",
+          "S0042",
+          "S0906",
+          "S0969",
+          "S1077",
+          "S0849",
+          "S1004",
+          "S0486",
+          "S0117",
+          "S0241",
+          "S0515",
+          "S0002",
+          "S1165",
+          "S0653",
+          "S0066",
+          "S0710",
+          "S0203",
+          "S0180",
+          "S0435",
+          "S0492",
+          "S0284",
+          "S0231",
+          "S0929",
+          "S0220",
+          "S0830",
+          "S0597",
+          "S0346",
+          "S0107",
+          "S0268",
+          "S0848",
+          "S0571",
+          "S0937",
+          "S0609",
+          "S1160",
+          "S0212",
+          "S0193",
+          "S0242",
+          "S0380",
+          "S0997",
+          "S0273",
+          "S0468",
+          "S0214",
+          "S0501",
+          "S0208",
+          "S0581",
+          "S0599",
+          "S1073",
+          "S0910",
+          "S0223",
+          "S0172",
+          "S0109",
+          "S0783",
+          "S0188",
+          "S0768",
+          "S0467",
+          "S0967",
+          "S1126",
+          "S1131",
+          "S0604",
+          "S0725",
+          "S1094",
+          "S0243",
+          "S0762",
+          "S0216",
+          "S0914",
+          "S1152",
+          "S0150",
+          "S0779",
+          "S0434",
+          "S0662",
+          "S1013",
+          "S1096",
+          "S0036",
+          "S0147",
+          "S0470",
+          "S0823",
+          "S0213",
+          "S0802",
+          "S0654",
+          "S0735",
+          "S0777",
+          "S0809",
+          "S0886",
+          "S0338",
+          "S0098",
+          "S0187",
+          "S0399",
+          "S0843",
+          "S0911",
+          "S0623",
+          "S1044",
+          "S1113",
+          "S0112",
+          "S0582",
+          "S1159",
+          "S1132",
+          "S0258",
+          "S0110",
+          "S0784",
+          "S0448",
+          "S1102",
+          "S0678",
+          "S0039",
+          "S0272",
+          "S0129",
+          "S1093",
+          "S1189",
+          "S0517",
+          "S1119",
+          "S0398",
+          "S0550",
+          "S0755",
+          "S1002",
+          "S0453",
+          "S0822",
+          "S0826",
+          "S1017",
+          "S0746",
+          "S1109",
+          "S0151",
+          "S0674",
+          "S0676",
+          "S0661",
+          "S0323",
+          "S0404",
+          "S0364",
+          "S0071",
+          "S1098",
+          "S0832",
+          "S1040",
+          "S0509",
+          "S0643",
+          "S0655",
+          "S1116",
+          "S0716",
+          "S0178",
+          "S0563",
+          "S0432",
+          "S1150",
+          "S0994",
+          "S0592",
+          "S1197",
+          "S0795",
+          "S1020",
+          "S0197",
+          "S1053",
+          "S0831",
+          "S1121",
+          "S0673",
+          "S0625",
+          "S0207",
+          "S0454",
+          "S0749",
+          "S0941",
+          "S0085",
+          "S0472",
+          "S0875",
+          "S0744",
+          "S0209",
+          "S0027",
+          "S0131",
+          "S1180",
+          "S0554",
+          "S0980",
+          "S0555",
+          "S1175",
+          "S0418",
+          "S0155",
+          "S0135",
+          "S0028",
+          "S0851",
+          "S0786",
+          "S0167",
+          "S0328",
+          "S0531",
+          "S0860",
+          "S0790",
+          "S0947",
+          "S0206",
+          "S0984",
+          "S0810",
+          "S0757",
+          "S1162",
+          "S0898",
+          "S0108",
+          "S0201",
+          "S0177",
+          "S0353",
+          "S0962",
+          "S1085",
+          "S0753",
+          "S0887",
+          "S0101",
+          "S0058",
+          "S0285",
+          "S0466",
+          "S0381",
+          "S0866",
+          "S1179",
+          "S0603",
+          "S0345",
+          "S1039",
+          "S1186",
+          "S0358",
+          "S1166",
+          "S0627",
+          "S0781",
+          "S0490",
+          "S0983",
+          "S0499",
+          "S0248",
+          "S0414",
+          "S0081",
+          "S0713",
+          "S0572",
+          "S0350",
+          "S0798",
+          "S0570",
+          "S0034",
+          "S0005",
+          "S0304",
+          "S0406",
+          "S0928",
+          "S0379",
+          "S0516",
+          "S0234",
+          "S0057",
+          "S0988",
+          "S0737",
+          "S0534",
+          "S0649",
+          "S1091",
+          "S0871",
+          "S0688",
+          "S0891",
+          "S0682",
+          "S0617",
+          "S0543",
+          "S0942",
+          "S0577",
+          "S0250",
+          "S1157",
+          "S0982",
+          "S0663",
+          "S0865",
+          "S1193",
+          "S0897",
+          "S0530",
+          "S0325",
+          "S0808",
+          "S0520",
+          "S0403",
+          "S0537",
+          "S0815",
+          "S0009",
+          "S0265",
+          "S0628",
+          "S0371",
+          "S1182",
+          "S0646",
+          "S1136",
+          "S0253",
+          "S0858",
+          "S1065",
+          "S0714",
+          "S0146",
+          "S0118",
+          "S0256",
+          "S0681",
+          "S0774",
+          "S0291",
+          "S1080",
+          "S0033",
+          "S0814",
+          "S0116",
+          "S0382",
+          "S0877",
+          "S0356",
+          "S0025",
+          "S0408",
+          "S1195",
+          "S0660",
+          "S0874",
+          "S0392",
+          "S0444",
+          "S0420",
+          "S0541",
+          "S0727",
+          "S0547",
+          "S0271",
+          "S0800",
+          "S0076",
+          "S0991",
+          "S0357",
+          "S1068",
+          "S0355",
+          "S0064",
+          "S1050",
+          "S0192",
+          "S0633",
+          "S1045",
+          "S0286",
+          "S0174",
+          "S0439",
+          "S0951",
+          "S0750",
+          "S0824",
+          "S0888",
+          "S0992",
+          "S0225",
+          "S0176",
+          "S0094",
+          "S0126",
+          "S0373",
+          "S1006",
+          "S0415",
+          "S0739",
+          "S0545",
+          "S0334",
+          "S0726",
+          "S1034",
+          "S0567",
+          "S1120",
+          "S0302",
+          "S0608",
+          "S0507",
+          "S0043",
+          "S0908",
+          "S1036",
+          "S1134",
+          "S0301",
+          "S0692",
+          "S0584",
+          "S0451",
+          "S0336",
+          "S0390",
+          "S0191",
+          "S1070",
+          "S0829",
+          "S0993",
+          "S0650",
+          "S1060",
+          "S0788",
+          "S1061",
+          "S0171",
+          "S0105",
+          "S0532",
+          "S0580",
+          "S0704",
+          "S0920",
+          "S0742",
+          "S1178",
+          "S0424",
+          "S0958",
+          "S0632",
+          "S0436",
+          "S0892",
+          "S0016",
+          "S0651",
+          "S0921",
+          "S1003",
+          "S0482",
+          "S0636",
+          "S0494",
+          "S1029",
+          "S0752",
+          "S1191",
+          "S0939",
+          "S0521",
+          "S0576",
+          "S0100",
+          "S0816",
+          "S0411",
+          "S0226",
+          "S0121",
+          "S0950",
+          "S0839",
+          "S0013",
+          "S0893",
+          "S0792",
+          "S0996",
+          "S0322",
+          "S0745",
+          "S0163",
+          "S0251",
+          "S0668",
+          "S0952",
+          "S1075",
+          "S0803",
+          "S0512",
+          "S0474",
+          "S0232",
+          "S0465",
+          "S0086",
+          "S1145",
+          "S0769",
+          "S0417",
+          "S0065",
+          "S0165",
+          "S0211",
+          "S0489",
+          "S0518",
+          "S1056",
+          "S0901",
+          "S0568",
+          "S1082",
+          "S0559",
+          "S0590",
+          "S1192",
+          "S0274",
+          "S0525",
+          "S0731",
+          "S0957",
+          "S0900",
+          "S0775",
+          "S0934",
+          "S0270",
+          "S1033",
+          "S0385",
+          "S0441",
+          "S0615",
+          "S0090",
+          "S0430",
+          "S0671",
+          "S0477",
+          "S1147",
+          "S0546",
+          "S0456",
+          "S0666",
+          "S0656",
+          "S0089",
+          "S1127",
+          "S0342",
+          "S0694",
+          "S0943",
+          "S0544",
+          "S0968",
+          "S0003",
+          "S0473",
+          "S1194",
+          "S0106",
+          "S1163",
+          "S1069",
+          "S0195",
+          "S0870",
+          "S0819",
+          "S0327",
+          "S0362",
+          "S0132",
+          "S0519",
+          "S0423",
+          "S0624",
+          "S1118",
+          "S0772",
+          "S0946",
+          "S1135",
+          "S0075",
+          "S0605",
+          "S0458",
+          "S1015",
+          "S0640",
+          "S0333",
+          "S0902",
+          "S0369",
+          "S0237",
+          "S0447",
+          "S0260",
+          "S0630",
+          "S0300",
+          "S1110",
+          "S0359",
+          "S0961",
+          "S0476",
+          "S0903",
+          "S0217",
+          "S0198",
+          "S0032",
+          "S0916",
+          "S0412",
+          "S0844",
+          "S0964",
+          "S0738",
+          "S0006",
+          "S1101",
+          "S0077",
+          "S0833",
+          "S0247",
+          "S0813",
+          "S0503",
+          "S0974",
+          "S0087",
+          "S0976",
+          "S1027",
+          "S0104",
+          "S0591",
+          "S0069",
+          "S1026",
+          "S0114",
+          "S0938",
+          "S0533",
+          "S0488",
+          "S0397",
+          "S0987",
+          "S0883",
+          "S1010",
+          "S0409",
+          "S0384",
+          "S0876",
+          "S0266",
+          "S0293",
+          "S0344",
+          "S0014",
+          "S0970",
+          "S0711",
+          "S0579",
+          "S0222",
+          "S0096",
+          "S0758",
+          "S1124",
+          "S0852",
+          "S0890",
+          "S0616",
+          "S0275",
+          "S0000",
+          "S0313",
+          "S0257",
+          "S0347",
+          "S0393",
+          "S0440",
+          "S1055",
+          "S1112",
+          "S0294",
+          "S0227",
+          "S0320",
+          "S0754",
+          "S0479",
+          "S0807",
+          "S0685",
+          "S0219",
+          "S0787",
+          "S0743",
+          "S1169",
+          "S0634",
+          "S0445",
+          "S0847",
+          "S1014",
+          "S0068",
+          "S0850",
+          "S0587",
+          "S1037",
+          "S1141",
+          "S0133",
+          "S0944",
+          "S0712",
+          "S0564",
+          "S1062",
+          "S0569",
+          "S0652",
+          "S0949",
+          "S0912",
+          "S0635",
+          "S0548",
+          "S1011",
+          "S0698",
+          "S1012",
+          "S0395",
+          "S0060",
+          "S0290",
+          "S0729",
+          "S0907",
+          "S0717",
+          "S0149",
+          "S0161",
+          "S0235",
+          "S0730"
+        ]
+      },
+      "metrics": {
+        "90% calibrated interval": "$53,424\u2013$98,410",
+        "Holdout MAE": "$10,142",
+        "Illustrative estimate": "$75,917",
+        "Observed coverage": "92.5%"
+      },
+      "notice": "Synthetic USD compensation model. Calibration coverage relies on exchangeability; this is not a real-world salary estimate."
+    },
+    "local_demo": "https://github.com/abhijith-abhii/paylens/blob/main/LEARNING_GUIDE.md",
+    "verification": "https://github.com/abhijith-abhii/paylens/blob/main/VERIFICATION.md"
+  },
+  {
+    "id": 7,
+    "name": "Retention Studio",
+    "slug": "retention-studio",
+    "category": "data-science-ml",
+    "problem": "Prioritize reviewable churn retention work",
+    "features": [
+      "Calibrated models",
+      "eligibility rules",
+      "budget",
+      "audited task queue"
+    ],
+    "stack": "pandas \u00b7 scikit-learn \u00b7 Flask",
+    "data": "IBM fictional telecom sample",
+    "source_idea": "Customer Churn Prediction",
+    "test_count": 27,
+    "flagship": true,
+    "verification_limits": [],
+    "repository": "https://github.com/abhijith-abhii/retention-studio",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "ci_status": "passed",
+    "category_label": "Data Science / ML",
+    "screenshot": "assets/retention-studio.png",
+    "local_demo": "https://github.com/abhijith-abhii/retention-studio/blob/main/LEARNING_GUIDE.md",
+    "verification": "https://github.com/abhijith-abhii/retention-studio/blob/main/VERIFICATION.md"
+  },
+  {
+    "id": 8,
+    "name": "CourtCraft",
+    "slug": "courtcraft",
+    "category": "data-science-ml",
+    "problem": "Compare basketball performance fairly",
+    "features": [
+      "Possession normalization",
+      "shrinkage",
+      "uncertainty",
+      "player comparisons"
+    ],
+    "stack": "pandas \u00b7 scipy \u00b7 Flask",
+    "data": "Authored synthetic box scores",
+    "source_idea": "Sports Analytics Deep Dive",
+    "test_count": 8,
+    "flagship": false,
+    "verification_limits": [],
+    "repository": "https://github.com/abhijith-abhii/courtcraft",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "ci_status": "passed",
+    "category_label": "Data Science / ML",
+    "screenshot": "assets/courtcraft.png",
+    "recorded_run": {
+      "bars": [
+        {
+          "label": "Player 23",
+          "value": 24.24
+        },
+        {
+          "label": "Player 12",
+          "value": 23.758
+        },
+        {
+          "label": "Player 11",
+          "value": 23.72
+        },
+        {
+          "label": "Player 22",
+          "value": 23.322
+        },
+        {
+          "label": "Player 02",
+          "value": 23.318
+        },
+        {
+          "label": "Player 05",
+          "value": 22.984
+        },
+        {
+          "label": "Player 24",
+          "value": 22.983
+        },
+        {
+          "label": "Player 20",
+          "value": 21.802
+        },
+        {
+          "label": "Player 15",
+          "value": 21.755
+        },
+        {
+          "label": "Player 19",
+          "value": 21.738
+        },
+        {
+          "label": "Player 03",
+          "value": 21.536
+        },
+        {
+          "label": "Player 10",
+          "value": 21.306
+        }
+      ],
+      "details": {
+        "data": "synthetic",
+        "prior": "empirical global points per minute",
+        "prior_minutes": 120,
+        "ranking": "shrunk_points_per36"
+      },
+      "metrics": {
+        "Games in sample": 528,
+        "Minutes": 11502,
+        "Players shown": 24
+      },
+      "notice": "Poisson/Gamma intervals assume a constant scoring rate; they do not model opponent strength or game dependence. True shooting uses the conventional 0.44 free-throw approximation.",
+      "rows": [
+        {
+          "assist_to_turnover": 2.057,
+          "assists": 72,
+          "fga": 145,
+          "fta": 74,
+          "games": 18,
+          "lower90": 22.101,
+          "minutes": 376,
+          "player": "Player 23",
+          "points": 267,
+          "points_per36": 25.564,
+          "rebounds": 112,
+          "shrunk_points_per36": 24.24,
+          "true_shooting": 0.752,
+          "turnovers": 35,
+          "upper90": 26.463
+        },
+        {
+          "assist_to_turnover": 1.906,
+          "assists": 61,
+          "fga": 101,
+          "fta": 51,
+          "games": 12,
+          "lower90": 21.405,
+          "minutes": 280,
+          "player": "Player 12",
+          "points": 197,
+          "points_per36": 25.329,
+          "rebounds": 51,
+          "shrunk_points_per36": 23.758,
+          "true_shooting": 0.798,
+          "turnovers": 32,
+          "upper90": 26.213
+        },
+        {
+          "assist_to_turnover": 3.0,
+          "assists": 117,
+          "fga": 159,
+          "fta": 77,
+          "games": 20,
+          "lower90": 21.726,
+          "minutes": 440,
+          "player": "Player 11",
+          "points": 302,
+          "points_per36": 24.709,
+          "rebounds": 99,
+          "shrunk_points_per36": 23.72,
+          "true_shooting": 0.783,
+          "turnovers": 39,
+          "upper90": 25.787
+        },
+        {
+          "assist_to_turnover": 2.261,
+          "assists": 156,
+          "fga": 213,
+          "fta": 124,
+          "games": 27,
+          "lower90": 21.602,
+          "minutes": 624,
+          "player": "Player 22",
+          "points": 415,
+          "points_per36": 23.942,
+          "rebounds": 131,
+          "shrunk_points_per36": 23.322,
+          "true_shooting": 0.776,
+          "turnovers": 69,
+          "upper90": 25.096
+        },
+        {
+          "assist_to_turnover": 2.194,
+          "assists": 79,
+          "fga": 93,
+          "fta": 64,
+          "games": 15,
+          "lower90": 21.005,
+          "minutes": 286,
+          "player": "Player 02",
+          "points": 196,
+          "points_per36": 24.671,
+          "rebounds": 93,
+          "shrunk_points_per36": 23.318,
+          "true_shooting": 0.809,
+          "turnovers": 36,
+          "upper90": 25.733
+        },
+        {
+          "assist_to_turnover": 2.161,
+          "assists": 134,
+          "fga": 177,
+          "fta": 112,
+          "games": 25,
+          "lower90": 21.092,
+          "minutes": 483,
+          "player": "Player 05",
+          "points": 318,
+          "points_per36": 23.702,
+          "rebounds": 154,
+          "shrunk_points_per36": 22.984,
+          "true_shooting": 0.703,
+          "turnovers": 62,
+          "upper90": 24.944
+        },
+        {
+          "assist_to_turnover": 1.964,
+          "assists": 110,
+          "fga": 233,
+          "fta": 77,
+          "games": 26,
+          "lower90": 21.276,
+          "minutes": 624,
+          "player": "Player 24",
+          "points": 408,
+          "points_per36": 23.538,
+          "rebounds": 156,
+          "shrunk_points_per36": 22.983,
+          "true_shooting": 0.764,
+          "turnovers": 56,
+          "upper90": 24.745
+        },
+        {
+          "assist_to_turnover": 2.189,
+          "assists": 116,
+          "fga": 159,
+          "fta": 63,
+          "games": 21,
+          "lower90": 19.905,
+          "minutes": 448,
+          "player": "Player 20",
+          "points": 277,
+          "points_per36": 22.259,
+          "rebounds": 122,
+          "shrunk_points_per36": 21.802,
+          "true_shooting": 0.742,
+          "turnovers": 53,
+          "upper90": 23.77
+        },
+        {
+          "assist_to_turnover": 2.091,
+          "assists": 46,
+          "fga": 71,
+          "fta": 25,
+          "games": 9,
+          "lower90": 19.251,
+          "minutes": 201,
+          "player": "Player 15",
+          "points": 127,
+          "points_per36": 22.746,
+          "rebounds": 62,
+          "shrunk_points_per36": 21.755,
+          "true_shooting": 0.774,
+          "turnovers": 22,
+          "upper90": 24.386
+        },
+        {
+          "assist_to_turnover": 1.924,
+          "assists": 152,
+          "fga": 270,
+          "fta": 117,
+          "games": 32,
+          "lower90": 20.211,
+          "minutes": 761,
+          "player": "Player 19",
+          "points": 465,
+          "points_per36": 21.997,
+          "rebounds": 166,
+          "shrunk_points_per36": 21.738,
+          "true_shooting": 0.723,
+          "turnovers": 79,
+          "upper90": 23.311
+        },
+        {
+          "assist_to_turnover": 1.446,
+          "assists": 94,
+          "fga": 119,
+          "fta": 102,
+          "games": 21,
+          "lower90": 19.441,
+          "minutes": 338,
+          "player": "Player 03",
+          "points": 207,
+          "points_per36": 22.047,
+          "rebounds": 128,
+          "shrunk_points_per36": 21.536,
+          "true_shooting": 0.632,
+          "turnovers": 65,
+          "upper90": 23.719
+        },
+        {
+          "assist_to_turnover": 2.295,
+          "assists": 101,
+          "fga": 164,
+          "fta": 65,
+          "games": 19,
+          "lower90": 19.428,
+          "minutes": 446,
+          "player": "Player 10",
+          "points": 268,
+          "points_per36": 21.632,
+          "rebounds": 126,
+          "shrunk_points_per36": 21.306,
+          "true_shooting": 0.696,
+          "turnovers": 44,
+          "upper90": 23.256
+        },
+        {
+          "assist_to_turnover": 1.457,
+          "assists": 67,
+          "fga": 126,
+          "fta": 63,
+          "games": 16,
+          "lower90": 18.853,
+          "minutes": 365,
+          "player": "Player 14",
+          "points": 214,
+          "points_per36": 21.107,
+          "rebounds": 87,
+          "shrunk_points_per36": 20.856,
+          "true_shooting": 0.696,
+          "turnovers": 46,
+          "upper90": 22.944
+        },
+        {
+          "assist_to_turnover": 1.793,
+          "assists": 104,
+          "fga": 148,
+          "fta": 94,
+          "games": 23,
+          "lower90": 18.676,
+          "minutes": 432,
+          "player": "Player 09",
+          "points": 248,
+          "points_per36": 20.667,
+          "rebounds": 101,
+          "shrunk_points_per36": 20.542,
+          "true_shooting": 0.655,
+          "turnovers": 58,
+          "upper90": 22.482
+        },
+        {
+          "assist_to_turnover": 1.397,
+          "assists": 81,
+          "fga": 153,
+          "fta": 92,
+          "games": 22,
+          "lower90": 18.361,
+          "minutes": 434,
+          "player": "Player 01",
+          "points": 244,
+          "points_per36": 20.24,
+          "rebounds": 122,
+          "shrunk_points_per36": 20.208,
+          "true_shooting": 0.631,
+          "turnovers": 58,
+          "upper90": 22.129
+        },
+        {
+          "assist_to_turnover": 1.507,
+          "assists": 107,
+          "fga": 205,
+          "fta": 112,
+          "games": 24,
+          "lower90": 17.604,
+          "minutes": 577,
+          "player": "Player 13",
+          "points": 305,
+          "points_per36": 19.029,
+          "rebounds": 153,
+          "shrunk_points_per36": 19.213,
+          "true_shooting": 0.6,
+          "turnovers": 71,
+          "upper90": 20.88
+        },
+        {
+          "assist_to_turnover": 2.597,
+          "assists": 187,
+          "fga": 266,
+          "fta": 139,
+          "games": 33,
+          "lower90": 17.664,
+          "minutes": 733,
+          "player": "Player 18",
+          "points": 386,
+          "points_per36": 18.958,
+          "rebounds": 202,
+          "shrunk_points_per36": 19.118,
+          "true_shooting": 0.59,
+          "turnovers": 72,
+          "upper90": 20.619
+        },
+        {
+          "assist_to_turnover": 1.965,
+          "assists": 112,
+          "fga": 193,
+          "fta": 100,
+          "games": 25,
+          "lower90": 16.291,
+          "minutes": 574,
+          "player": "Player 21",
+          "points": 277,
+          "points_per36": 17.373,
+          "rebounds": 145,
+          "shrunk_points_per36": 17.843,
+          "true_shooting": 0.584,
+          "turnovers": 57,
+          "upper90": 19.455
+        },
+        {
+          "assist_to_turnover": 1.881,
+          "assists": 79,
+          "fga": 130,
+          "fta": 57,
+          "games": 19,
+          "lower90": 15.794,
+          "minutes": 394,
+          "player": "Player 04",
+          "points": 184,
+          "points_per36": 16.812,
+          "rebounds": 113,
+          "shrunk_points_per36": 17.578,
+          "true_shooting": 0.593,
+          "turnovers": 42,
+          "upper90": 19.442
+        },
+        {
+          "assist_to_turnover": 2.387,
+          "assists": 148,
+          "fga": 250,
+          "fta": 110,
+          "games": 30,
+          "lower90": 15.387,
+          "minutes": 720,
+          "player": "Player 06",
+          "points": 324,
+          "points_per36": 16.2,
+          "rebounds": 186,
+          "shrunk_points_per36": 16.756,
+          "true_shooting": 0.543,
+          "turnovers": 62,
+          "upper90": 18.174
+        },
+        {
+          "assist_to_turnover": 1.833,
+          "assists": 66,
+          "fga": 102,
+          "fta": 50,
+          "games": 13,
+          "lower90": 14.148,
+          "minutes": 312,
+          "player": "Player 08",
+          "points": 125,
+          "points_per36": 14.423,
+          "rebounds": 91,
+          "shrunk_points_per36": 15.998,
+          "true_shooting": 0.504,
+          "turnovers": 36,
+          "upper90": 17.944
+        },
+        {
+          "assist_to_turnover": 2.083,
+          "assists": 125,
+          "fga": 173,
+          "fta": 90,
+          "games": 25,
+          "lower90": 14.156,
+          "minutes": 538,
+          "player": "Player 07",
+          "points": 219,
+          "points_per36": 14.654,
+          "rebounds": 108,
+          "shrunk_points_per36": 15.646,
+          "true_shooting": 0.515,
+          "turnovers": 60,
+          "upper90": 17.199
+        },
+        {
+          "assist_to_turnover": 1.95,
+          "assists": 156,
+          "fga": 239,
+          "fta": 108,
+          "games": 34,
+          "lower90": 14.214,
+          "minutes": 673,
+          "player": "Player 16",
+          "points": 276,
+          "points_per36": 14.764,
+          "rebounds": 198,
+          "shrunk_points_per36": 15.57,
+          "true_shooting": 0.482,
+          "turnovers": 80,
+          "upper90": 16.979
+        },
+        {
+          "assist_to_turnover": 1.962,
+          "assists": 102,
+          "fga": 151,
+          "fta": 69,
+          "games": 19,
+          "lower90": 13.632,
+          "minutes": 443,
+          "player": "Player 17",
+          "points": 171,
+          "points_per36": 13.896,
+          "rebounds": 116,
+          "shrunk_points_per36": 15.217,
+          "true_shooting": 0.471,
+          "turnovers": 52,
+          "upper90": 16.875
+        }
+      ]
+    },
+    "local_demo": "https://github.com/abhijith-abhii/courtcraft/blob/main/LEARNING_GUIDE.md",
+    "verification": "https://github.com/abhijith-abhii/courtcraft/blob/main/VERIFICATION.md"
+  },
+  {
+    "id": 9,
+    "name": "Ticket Tuner",
+    "slug": "ticket-tuner",
+    "category": "data-science-ml",
+    "problem": "Adapt a small model for support routing",
+    "features": [
+      "Fine-tuning",
+      "grouped splits",
+      "baseline",
+      "saved model",
+      "inference"
+    ],
+    "stack": "PyTorch \u00b7 Transformers",
+    "data": "Authored synthetic support corpus",
+    "source_idea": "Fine-Tuned LLM for a Niche Task",
+    "test_count": 7,
+    "flagship": false,
+    "verification_limits": [],
+    "repository": "https://github.com/abhijith-abhii/ticket-tuner",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "ci_status": "passed",
+    "category_label": "Data Science / ML",
+    "screenshot": "assets/ticket-tuner.png",
+    "recorded_run": {
+      "answer": "Suggested routing: billing. Human review required.",
+      "details": {
+        "epochs": [
+          {
+            "accuracy": 0.7361111111111112,
+            "epoch": 1,
+            "invalid_labels": 0,
+            "macro_f1": 0.6748938373174947,
+            "train_loss": 0.9109111593829261
+          },
+          {
+            "accuracy": 0.875,
+            "epoch": 2,
+            "invalid_labels": 0,
+            "macro_f1": 0.8719851576994433,
+            "train_loss": 0.3744959193799231
+          },
+          {
+            "accuracy": 0.8888888888888888,
+            "epoch": 3,
+            "invalid_labels": 0,
+            "macro_f1": 0.8857142857142857,
+            "train_loss": 0.13820023413885524
+          },
+          {
+            "accuracy": 0.8888888888888888,
+            "epoch": 4,
+            "invalid_labels": 0,
+            "macro_f1": 0.8857142857142857,
+            "train_loss": 0.019626776381671703
+          },
+          {
+            "accuracy": 0.8888888888888888,
+            "epoch": 5,
+            "invalid_labels": 0,
+            "macro_f1": 0.8857142857142857,
+            "train_loss": 0.008801861707508107
+          }
+        ],
+        "holdout_finetuned": {
+          "accuracy": 1.0,
+          "invalid_labels": 0,
+          "macro_f1": 1.0
+        },
+        "holdout_majority_accuracy": 0.3333333333333333,
+        "holdout_tfidf_baseline": {
+          "accuracy": 0.6805555555555556,
+          "invalid_labels": 0,
+          "macro_f1": 0.6669763840495548
+        },
+        "limitations": "Authored synthetic language only; no user tickets; tiny heldout template set. Test was used once after validation checkpoint selection.",
+        "model_source": {
+          "license": "Apache-2.0",
+          "model": "google/flan-t5-small",
+          "purpose": "Fine-tune a small instruction model to output support routing labels",
+          "revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab"
+        },
+        "predictions": [
+          {
+            "expected": "billing",
+            "id": "billing-12-0",
+            "predicted": "billing"
+          },
+          {
+            "expected": "billing",
+            "id": "billing-12-1",
+            "predicted": "billing"
+          },
+          {
+            "expected": "billing",
+            "id": "billing-12-2",
+            "predicted": "billing"
+          },
+          {
+            "expected": "billing",
+            "id": "billing-12-3",
+            "predicted": "billing"
+          },
+          {
+            "expected": "billing",
+            "id": "billing-12-4",
+            "predicted": "billing"
+          },
+          {
+            "expected": "billing",
+            "id": "billing-12-5",
+            "predicted": "billing"
+          },
+          {
+            "expected": "billing",
+            "id": "billing-12-6",
+            "predicted": "billing"
+          },
+          {
+            "expected": "billing",
+            "id": "billing-12-7",
+            "predicted": "billing"
+          },
+          {
+            "expected": "billing",
+            "id": "billing-13-0",
+            "predicted": "billing"
+          },
+          {
+            "expected": "billing",
+            "id": "billing-13-1",
+            "predicted": "billing"
+          },
+          {
+            "expected": "billing",
+            "id": "billing-13-2",
+            "predicted": "billing"
+          },
+          {
+            "expected": "billing",
+            "id": "billing-13-3",
+            "predicted": "billing"
+          },
+          {
+            "expected": "billing",
+            "id": "billing-13-4",
+            "predicted": "billing"
+          },
+          {
+            "expected": "billing",
+            "id": "billing-13-5",
+            "predicted": "billing"
+          },
+          {
+            "expected": "billing",
+            "id": "billing-13-6",
+            "predicted": "billing"
+          },
+          {
+            "expected": "billing",
+            "id": "billing-13-7",
+            "predicted": "billing"
+          },
+          {
+            "expected": "billing",
+            "id": "billing-14-0",
+            "predicted": "billing"
+          },
+          {
+            "expected": "billing",
+            "id": "billing-14-1",
+            "predicted": "billing"
+          },
+          {
+            "expected": "billing",
+            "id": "billing-14-2",
+            "predicted": "billing"
+          },
+          {
+            "expected": "billing",
+            "id": "billing-14-3",
+            "predicted": "billing"
+          },
+          {
+            "expected": "billing",
+            "id": "billing-14-4",
+            "predicted": "billing"
+          },
+          {
+            "expected": "billing",
+            "id": "billing-14-5",
+            "predicted": "billing"
+          },
+          {
+            "expected": "billing",
+            "id": "billing-14-6",
+            "predicted": "billing"
+          },
+          {
+            "expected": "billing",
+            "id": "billing-14-7",
+            "predicted": "billing"
+          },
+          {
+            "expected": "access",
+            "id": "access-12-0",
+            "predicted": "access"
+          },
+          {
+            "expected": "access",
+            "id": "access-12-1",
+            "predicted": "access"
+          },
+          {
+            "expected": "access",
+            "id": "access-12-2",
+            "predicted": "access"
+          },
+          {
+            "expected": "access",
+            "id": "access-12-3",
+            "predicted": "access"
+          },
+          {
+            "expected": "access",
+            "id": "access-12-4",
+            "predicted": "access"
+          },
+          {
+            "expected": "access",
+            "id": "access-12-5",
+            "predicted": "access"
+          },
+          {
+            "expected": "access",
+            "id": "access-12-6",
+            "predicted": "access"
+          },
+          {
+            "expected": "access",
+            "id": "access-12-7",
+            "predicted": "access"
+          },
+          {
+            "expected": "access",
+            "id": "access-13-0",
+            "predicted": "access"
+          },
+          {
+            "expected": "access",
+            "id": "access-13-1",
+            "predicted": "access"
+          },
+          {
+            "expected": "access",
+            "id": "access-13-2",
+            "predicted": "access"
+          },
+          {
+            "expected": "access",
+            "id": "access-13-3",
+            "predicted": "access"
+          },
+          {
+            "expected": "access",
+            "id": "access-13-4",
+            "predicted": "access"
+          },
+          {
+            "expected": "access",
+            "id": "access-13-5",
+            "predicted": "access"
+          },
+          {
+            "expected": "access",
+            "id": "access-13-6",
+            "predicted": "access"
+          },
+          {
+            "expected": "access",
+            "id": "access-13-7",
+            "predicted": "access"
+          },
+          {
+            "expected": "access",
+            "id": "access-14-0",
+            "predicted": "access"
+          },
+          {
+            "expected": "access",
+            "id": "access-14-1",
+            "predicted": "access"
+          },
+          {
+            "expected": "access",
+            "id": "access-14-2",
+            "predicted": "access"
+          },
+          {
+            "expected": "access",
+            "id": "access-14-3",
+            "predicted": "access"
+          },
+          {
+            "expected": "access",
+            "id": "access-14-4",
+            "predicted": "access"
+          },
+          {
+            "expected": "access",
+            "id": "access-14-5",
+            "predicted": "access"
+          },
+          {
+            "expected": "access",
+            "id": "access-14-6",
+            "predicted": "access"
+          },
+          {
+            "expected": "access",
+            "id": "access-14-7",
+            "predicted": "access"
+          },
+          {
+            "expected": "bug",
+            "id": "bug-12-0",
+            "predicted": "bug"
+          },
+          {
+            "expected": "bug",
+            "id": "bug-12-1",
+            "predicted": "bug"
+          },
+          {
+            "expected": "bug",
+            "id": "bug-12-2",
+            "predicted": "bug"
+          },
+          {
+            "expected": "bug",
+            "id": "bug-12-3",
+            "predicted": "bug"
+          },
+          {
+            "expected": "bug",
+            "id": "bug-12-4",
+            "predicted": "bug"
+          },
+          {
+            "expected": "bug",
+            "id": "bug-12-5",
+            "predicted": "bug"
+          },
+          {
+            "expected": "bug",
+            "id": "bug-12-6",
+            "predicted": "bug"
+          },
+          {
+            "expected": "bug",
+            "id": "bug-12-7",
+            "predicted": "bug"
+          },
+          {
+            "expected": "bug",
+            "id": "bug-13-0",
+            "predicted": "bug"
+          },
+          {
+            "expected": "bug",
+            "id": "bug-13-1",
+            "predicted": "bug"
+          },
+          {
+            "expected": "bug",
+            "id": "bug-13-2",
+            "predicted": "bug"
+          },
+          {
+            "expected": "bug",
+            "id": "bug-13-3",
+            "predicted": "bug"
+          },
+          {
+            "expected": "bug",
+            "id": "bug-13-4",
+            "predicted": "bug"
+          },
+          {
+            "expected": "bug",
+            "id": "bug-13-5",
+            "predicted": "bug"
+          },
+          {
+            "expected": "bug",
+            "id": "bug-13-6",
+            "predicted": "bug"
+          },
+          {
+            "expected": "bug",
+            "id": "bug-13-7",
+            "predicted": "bug"
+          },
+          {
+            "expected": "bug",
+            "id": "bug-14-0",
+            "predicted": "bug"
+          },
+          {
+            "expected": "bug",
+            "id": "bug-14-1",
+            "predicted": "bug"
+          },
+          {
+            "expected": "bug",
+            "id": "bug-14-2",
+            "predicted": "bug"
+          },
+          {
+            "expected": "bug",
+            "id": "bug-14-3",
+            "predicted": "bug"
+          },
+          {
+            "expected": "bug",
+            "id": "bug-14-4",
+            "predicted": "bug"
+          },
+          {
+            "expected": "bug",
+            "id": "bug-14-5",
+            "predicted": "bug"
+          },
+          {
+            "expected": "bug",
+            "id": "bug-14-6",
+            "predicted": "bug"
+          },
+          {
+            "expected": "bug",
+            "id": "bug-14-7",
+            "predicted": "bug"
+          }
+        ],
+        "seconds": 19.37,
+        "seed": 28,
+        "split_sizes": {
+          "test": 72,
+          "train": 216,
+          "validation": 72
+        },
+        "split_unit": "template family; all item expansions remain in one split",
+        "validation_zero_shot": {
+          "accuracy": 0.3333333333333333,
+          "invalid_labels": 5,
+          "macro_f1": 0.35286209286209286
+        }
+      },
+      "metrics": {
+        "Holdout macro F1": 1.0,
+        "Routing category": "billing",
+        "Training examples": 216
+      },
+      "notice": "Actual locally fine-tuned small language model output. No ticket is sent to a service. Long inputs are truncated at 96 tokens."
+    },
+    "local_demo": "https://github.com/abhijith-abhii/ticket-tuner/blob/main/LEARNING_GUIDE.md",
+    "verification": "https://github.com/abhijith-abhii/ticket-tuner/blob/main/VERIFICATION.md"
+  },
+  {
+    "id": 10,
+    "name": "SpendMap",
+    "slug": "spendmap",
+    "category": "data-science-ml",
+    "problem": "Understand spending with editable categories",
+    "features": [
+      "Rule categories",
+      "merchant overrides",
+      "monthly trends",
+      "standardized clustering"
+    ],
+    "stack": "pandas \u00b7 scikit-learn \u00b7 Flask",
+    "data": "Synthetic transactions",
+    "source_idea": "Personal Finance Spending Clusters",
+    "test_count": 10,
+    "flagship": false,
+    "verification_limits": [],
+    "repository": "https://github.com/abhijith-abhii/spendmap",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "ci_status": "passed",
+    "category_label": "Data Science / ML",
+    "screenshot": "assets/spendmap.png",
+    "recorded_run": {
+      "bars": [
+        {
+          "label": "Dining",
+          "value": 14647.02
+        },
+        {
+          "label": "Entertainment",
+          "value": 13462.85
+        },
+        {
+          "label": "Groceries",
+          "value": 16492.82
+        },
+        {
+          "label": "Transport",
+          "value": 13089.01
+        },
+        {
+          "label": "Uncategorized",
+          "value": 49422.09
+        }
+      ],
+      "chart_title": "Spending by your categories",
+      "details": {
+        "cluster_counts": {
+          "0": 26,
+          "1": 16,
+          "2": 18
+        },
+        "method": "category shares + transaction frequency; standardized KMeans; descriptive segments, not prediction",
+        "monthly_cents": {
+          "2026-01": 1469905,
+          "2026-02": 1634223,
+          "2026-03": 1770210,
+          "2026-04": 1751109,
+          "2026-05": 1651342,
+          "2026-06": 2434590
+        },
+        "rules": {
+          "Cafe": "Dining",
+          "Market": "Groceries",
+          "Metro": "Transport",
+          "Stream": "Entertainment"
+        },
+        "total_cents": 10711379
+      },
+      "metrics": {
+        "Customers": 60,
+        "Silhouette": 0.268,
+        "Total spending": "$107,113.79",
+        "Transactions": 1000
+      },
+      "rows": [
+        {
+          "cluster": 1,
+          "customer": "C000",
+          "total_usd": 2363.05
+        },
+        {
+          "cluster": 0,
+          "customer": "C001",
+          "total_usd": 1518.52
+        },
+        {
+          "cluster": 2,
+          "customer": "C002",
+          "total_usd": 1014.32
+        },
+        {
+          "cluster": 1,
+          "customer": "C003",
+          "total_usd": 1537.32
+        },
+        {
+          "cluster": 0,
+          "customer": "C004",
+          "total_usd": 2282.0
+        },
+        {
+          "cluster": 2,
+          "customer": "C005",
+          "total_usd": 1062.27
+        },
+        {
+          "cluster": 1,
+          "customer": "C006",
+          "total_usd": 1130.97
+        },
+        {
+          "cluster": 0,
+          "customer": "C007",
+          "total_usd": 1835.11
+        },
+        {
+          "cluster": 2,
+          "customer": "C008",
+          "total_usd": 910.88
+        },
+        {
+          "cluster": 1,
+          "customer": "C009",
+          "total_usd": 373.15
+        },
+        {
+          "cluster": 0,
+          "customer": "C010",
+          "total_usd": 2545.39
+        },
+        {
+          "cluster": 2,
+          "customer": "C011",
+          "total_usd": 1889.97
+        },
+        {
+          "cluster": 1,
+          "customer": "C012",
+          "total_usd": 1705.92
+        },
+        {
+          "cluster": 0,
+          "customer": "C013",
+          "total_usd": 2090.64
+        },
+        {
+          "cluster": 2,
+          "customer": "C014",
+          "total_usd": 980.76
+        },
+        {
+          "cluster": 1,
+          "customer": "C015",
+          "total_usd": 1990.02
+        },
+        {
+          "cluster": 0,
+          "customer": "C016",
+          "total_usd": 1486.02
+        },
+        {
+          "cluster": 0,
+          "customer": "C017",
+          "total_usd": 2609.28
+        },
+        {
+          "cluster": 1,
+          "customer": "C018",
+          "total_usd": 1288.66
+        },
+        {
+          "cluster": 0,
+          "customer": "C019",
+          "total_usd": 2762.64
+        },
+        {
+          "cluster": 2,
+          "customer": "C020",
+          "total_usd": 2045.39
+        },
+        {
+          "cluster": 1,
+          "customer": "C021",
+          "total_usd": 1649.56
+        },
+        {
+          "cluster": 0,
+          "customer": "C022",
+          "total_usd": 1694.07
+        },
+        {
+          "cluster": 2,
+          "customer": "C023",
+          "total_usd": 1313.17
+        },
+        {
+          "cluster": 1,
+          "customer": "C024",
+          "total_usd": 2532.26
+        },
+        {
+          "cluster": 0,
+          "customer": "C025",
+          "total_usd": 2384.75
+        },
+        {
+          "cluster": 2,
+          "customer": "C026",
+          "total_usd": 2058.72
+        },
+        {
+          "cluster": 1,
+          "customer": "C027",
+          "total_usd": 1014.04
+        },
+        {
+          "cluster": 0,
+          "customer": "C028",
+          "total_usd": 2757.08
+        },
+        {
+          "cluster": 2,
+          "customer": "C029",
+          "total_usd": 3078.68
+        },
+        {
+          "cluster": 1,
+          "customer": "C030",
+          "total_usd": 1283.49
+        },
+        {
+          "cluster": 0,
+          "customer": "C031",
+          "total_usd": 1938.82
+        },
+        {
+          "cluster": 2,
+          "customer": "C032",
+          "total_usd": 1526.83
+        },
+        {
+          "cluster": 1,
+          "customer": "C033",
+          "total_usd": 1239.12
+        },
+        {
+          "cluster": 0,
+          "customer": "C034",
+          "total_usd": 1488.07
+        },
+        {
+          "cluster": 2,
+          "customer": "C035",
+          "total_usd": 1418.4
+        },
+        {
+          "cluster": 1,
+          "customer": "C036",
+          "total_usd": 924.08
+        },
+        {
+          "cluster": 0,
+          "customer": "C037",
+          "total_usd": 1397.2
+        },
+        {
+          "cluster": 2,
+          "customer": "C038",
+          "total_usd": 1716.73
+        },
+        {
+          "cluster": 0,
+          "customer": "C039",
+          "total_usd": 1248.56
+        },
+        {
+          "cluster": 0,
+          "customer": "C040",
+          "total_usd": 1588.96
+        },
+        {
+          "cluster": 2,
+          "customer": "C041",
+          "total_usd": 1630.88
+        },
+        {
+          "cluster": 1,
+          "customer": "C042",
+          "total_usd": 1596.12
+        },
+        {
+          "cluster": 0,
+          "customer": "C043",
+          "total_usd": 2786.81
+        },
+        {
+          "cluster": 2,
+          "customer": "C044",
+          "total_usd": 2840.17
+        },
+        {
+          "cluster": 1,
+          "customer": "C045",
+          "total_usd": 1970.16
+        },
+        {
+          "cluster": 0,
+          "customer": "C046",
+          "total_usd": 2971.77
+        },
+        {
+          "cluster": 2,
+          "customer": "C047",
+          "total_usd": 1890.85
+        },
+        {
+          "cluster": 1,
+          "customer": "C048",
+          "total_usd": 1606.77
+        },
+        {
+          "cluster": 0,
+          "customer": "C049",
+          "total_usd": 2710.58
+        },
+        {
+          "cluster": 2,
+          "customer": "C050",
+          "total_usd": 1537.94
+        },
+        {
+          "cluster": 0,
+          "customer": "C051",
+          "total_usd": 1592.5
+        },
+        {
+          "cluster": 0,
+          "customer": "C052",
+          "total_usd": 2911.15
+        },
+        {
+          "cluster": 2,
+          "customer": "C053",
+          "total_usd": 1657.17
+        },
+        {
+          "cluster": 0,
+          "customer": "C054",
+          "total_usd": 1572.08
+        },
+        {
+          "cluster": 0,
+          "customer": "C055",
+          "total_usd": 3201.92
+        },
+        {
+          "cluster": 2,
+          "customer": "C056",
+          "total_usd": 1926.91
+        },
+        {
+          "cluster": 0,
+          "customer": "C057",
+          "total_usd": 890.33
+        },
+        {
+          "cluster": 0,
+          "customer": "C058",
+          "total_usd": 955.6
+        },
+        {
+          "cluster": 0,
+          "customer": "C059",
+          "total_usd": 1189.21
+        }
+      ]
+    },
+    "local_demo": "https://github.com/abhijith-abhii/spendmap/blob/main/LEARNING_GUIDE.md",
+    "verification": "https://github.com/abhijith-abhii/spendmap/blob/main/VERIFICATION.md"
+  },
+  {
+    "id": 11,
+    "name": "DocSearch Atlas",
+    "slug": "docsearch",
+    "category": "ai-ml-engineering",
+    "problem": "Answer engineering runbook questions with evidence",
+    "features": [
+      "Incremental retrieval",
+      "citations",
+      "grounded answer composition",
+      "optional local LLM"
+    ],
+    "stack": "SQLite FTS5 \u00b7 Flask",
+    "data": "Authored runbooks; existing DocSearch code",
+    "source_idea": "Domain-Specific RAG Application",
+    "test_count": 19,
+    "flagship": true,
+    "verification_limits": [],
+    "repository": "https://github.com/abhijith-abhii/docsearch",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "ci_status": "passed",
+    "category_label": "AI / ML Engineering",
+    "screenshot": "assets/docsearch.png",
+    "recorded_run": {
+      "answer": "# Backup policy\n\nThe backup retention period is 14 days. [backups.md:1\u20134]\n\nEach database backup is encrypted at rest. [backups.md:1\u20134]\n\nA backup failure pages the on-call engineer after two consecutive failed runs. [backups.md:1\u20134]",
+      "details": {
+        "model": null,
+        "question": "How long is the backup retention period?",
+        "sources": [
+          {
+            "body": "# Backup policy\n\nThe backup retention period is 14 days. Each database backup is encrypted at rest. Backups run every day at 02:00 UTC. A backup failure pages the on-call engineer after two consecutive failed runs.\n",
+            "end_line": 4,
+            "excerpt": "# [Backup] policy\n\nThe [backup] retention period is 14 days. Each database [backup] is encrypted at rest. Backups run every day at 02:00 UTC \u2026 ",
+            "heading": "Backup policy",
+            "matches": 3,
+            "path": "backups.md",
+            "rank": -2.8550116019255656,
+            "start_line": 1
+          },
+          {
+            "body": "## Recovery\n\nBefore restoring a backup, stop all writers. Restore to a new database instance and verify row counts and the latest committed transaction. Switch traffic only after the verification checks pass. The illustrative recovery time objective is 30 minutes; this policy is not evidence that the objective has been achieved.",
+            "end_line": 7,
+            "excerpt": "## Recovery\n\nBefore restoring a [backup], stop all writers. Restore to a new database instance and verify row counts and the latest committed transaction. Switch \u2026 ",
+            "heading": "Recovery",
+            "matches": 1,
+            "path": "backups.md",
+            "rank": -1.2215997822908353,
+            "start_line": 5
+          }
+        ]
+      },
+      "metrics": {
+        "Engine": "extractive",
+        "Retrieved passages": 2
+      },
+      "notice": "Deterministic extractive answer: source sentences, not language-model output.",
+      "rows": [
+        {
+          "end_line": 4,
+          "heading": "Backup policy",
+          "matches": 3,
+          "path": "backups.md",
+          "start_line": 1
+        },
+        {
+          "end_line": 7,
+          "heading": "Recovery",
+          "matches": 1,
+          "path": "backups.md",
+          "start_line": 5
+        }
+      ]
+    },
+    "local_demo": "https://github.com/abhijith-abhii/docsearch/blob/main/LEARNING_GUIDE.md",
+    "verification": "https://github.com/abhijith-abhii/docsearch/blob/main/VERIFICATION.md"
+  },
+  {
+    "id": 12,
+    "name": "QueryGuard",
+    "slug": "queryguard",
+    "category": "ai-ml-engineering",
+    "problem": "Ask bounded sales questions safely",
+    "features": [
+      "Five supported natural-language business intents",
+      "Parameterized SQL and visible execution plans",
+      "SQLite read-only access, authorizer and query budgets"
+    ],
+    "stack": "SQLite \u00b7 Flask",
+    "data": "Synthetic sales database",
+    "source_idea": "Text-to-SQL Interface",
+    "test_count": 15,
+    "flagship": false,
+    "verification_limits": [],
+    "repository": "https://github.com/abhijith-abhii/queryguard",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "ci_status": "passed",
+    "category_label": "AI / ML Engineering",
+    "screenshot": "assets/queryguard.png",
+    "recorded_run": {
+      "answer": "SELECT category,ROUND(SUM(cents)/100.0,2) AS revenue_usd FROM orders GROUP BY category ORDER BY revenue_usd DESC",
+      "bars": [
+        {
+          "label": "Books",
+          "value": 7312.0
+        },
+        {
+          "label": "Electronics",
+          "value": 6489.5
+        },
+        {
+          "label": "Home",
+          "value": 5635.5
+        }
+      ],
+      "details": {
+        "execution": "SQLite read-only URI, authorizer, instruction and row budgets",
+        "parameters": [],
+        "planner": "Deterministic intent grammar; no LLM"
+      },
+      "metrics": {
+        "Access": "read-only",
+        "Intent": "Revenue by category",
+        "Rows": 3
+      },
+      "notice": "Synthetic sales data. This deliberately bounded interface rejects unsupported questions rather than guessing SQL.",
+      "rows": [
+        {
+          "category": "Books",
+          "revenue_usd": 7312.0
+        },
+        {
+          "category": "Electronics",
+          "revenue_usd": 6489.5
+        },
+        {
+          "category": "Home",
+          "revenue_usd": 5635.5
+        }
+      ]
+    },
+    "local_demo": "https://github.com/abhijith-abhii/queryguard/blob/main/LEARNING_GUIDE.md",
+    "verification": "https://github.com/abhijith-abhii/queryguard/blob/main/VERIFICATION.md"
+  },
+  {
+    "id": 13,
+    "name": "Release Pilot",
+    "slug": "release-pilot",
+    "category": "ai-ml-engineering",
+    "problem": "Assemble a release review from local changes",
+    "features": [
+      "Tool-planning agent",
+      "file checks",
+      "tests",
+      "diff summary",
+      "resumable audit"
+    ],
+    "stack": "Python \u00b7 Flask",
+    "data": "Local sample release workspace",
+    "source_idea": "AI Workflow Agent",
+    "test_count": 10,
+    "flagship": false,
+    "verification_limits": [],
+    "repository": "https://github.com/abhijith-abhii/release-pilot",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "ci_status": "passed",
+    "category_label": "AI / ML Engineering",
+    "screenshot": "assets/release-pilot.png",
+    "recorded_run": {
+      "answer": "# Release 1.1.0\n\n- fix: Reject negative prices instead of reducing the subtotal.\n- test: Cover empty and invalid baskets.\n",
+      "details": {
+        "planner": "policy-constrained state-machine agent",
+        "published": false,
+        "reused": false,
+        "run_id": "60a59a019ae161f6",
+        "scenario": "passing",
+        "status": "ready_for_review",
+        "summary_engine": "rules",
+        "trace": [
+          {
+            "detail": {
+              "files": [
+                "calculator.py",
+                "test_calculator.py"
+              ],
+              "suspected_secrets": []
+            },
+            "status": "passed",
+            "step": 1,
+            "tool": "inspect_workspace"
+          },
+          {
+            "detail": {
+              "exit_code": 0,
+              "output": "test_empty (test_calculator.TestSubtotal.test_empty) ... ok\ntest_negative (test_calculator.TestSubtotal.test_negative) ... ok\ntest_total (test_calculator.TestSubtotal.test_total) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.000s\n\nOK\n",
+              "seconds": 0.0317
+            },
+            "status": "passed",
+            "step": 2,
+            "tool": "run_tests"
+          },
+          {
+            "detail": {
+              "artifact": "60a59a019ae161f6.md",
+              "text": "# Release 1.1.0\n\n- fix: Reject negative prices instead of reducing the subtotal.\n- test: Cover empty and invalid baskets.\n"
+            },
+            "status": "passed",
+            "step": 3,
+            "tool": "write_review_draft"
+          }
+        ],
+        "version": "1.1.0"
+      },
+      "metrics": {
+        "Cached run": false,
+        "Status": "ready_for_review",
+        "Tools executed": 3
+      },
+      "notice": "Actual local tool execution. Rules enforce tool order and block failed tests. Local-llm mode generates a review summary; rules mode uses only the change manifest. Nothing is published.",
+      "rows": [
+        {
+          "status": "passed",
+          "step": 1,
+          "tool": "inspect_workspace"
+        },
+        {
+          "status": "passed",
+          "step": 2,
+          "tool": "run_tests"
+        },
+        {
+          "status": "passed",
+          "step": 3,
+          "tool": "write_review_draft"
+        }
+      ]
+    },
+    "local_demo": "https://github.com/abhijith-abhii/release-pilot/blob/main/LEARNING_GUIDE.md",
+    "verification": "https://github.com/abhijith-abhii/release-pilot/blob/main/VERIFICATION.md"
+  },
+  {
+    "id": 14,
+    "name": "EvalBench",
+    "slug": "evalbench",
+    "category": "ai-ml-engineering",
+    "problem": "Compare model answers using repeatable evidence",
+    "features": [
+      "Dataset validation",
+      "local endpoint adapters",
+      "scoring",
+      "paired bootstrap",
+      "cost logs"
+    ],
+    "stack": "Python \u00b7 Flask",
+    "data": "Authored QA cases; explicit recorded responses",
+    "source_idea": "LLM Evaluation Platform",
+    "test_count": 7,
+    "flagship": false,
+    "verification_limits": [],
+    "repository": "https://github.com/abhijith-abhii/evalbench",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "ci_status": "passed",
+    "category_label": "AI / ML Engineering",
+    "screenshot": "assets/evalbench.png",
+    "recorded_run": {
+      "bars": [
+        {
+          "label": "flan-direct",
+          "value": 0.0
+        },
+        {
+          "label": "flan-context",
+          "value": 0.37222500000000003
+        }
+      ],
+      "details": {
+        "left_metadata": {
+          "actual_inference": true,
+          "cost_note": "No paid API; local electricity/hardware cost not measured",
+          "device": "CPU",
+          "max_new_tokens": 35,
+          "model": "google/flan-t5-small",
+          "revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+          "run": "flan-direct",
+          "seed": 28
+        },
+        "right_metadata": {
+          "actual_inference": true,
+          "cost_note": "No paid API; local electricity/hardware cost not measured",
+          "device": "CPU",
+          "max_new_tokens": 35,
+          "model": "google/flan-t5-small",
+          "revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+          "run": "flan-context",
+          "seed": 28
+        },
+        "statistics": {
+          "bootstrap_95_interval": [
+            0.13889166666666666,
+            0.6333333333333333
+          ],
+          "cases": 12,
+          "left_mean_f1": 0.0,
+          "paired_delta": 0.37222500000000003,
+          "resamples": 5000,
+          "right_mean_f1": 0.37222500000000003,
+          "seed": 28
+        }
+      },
+      "metrics": {
+        "Cases": 12,
+        "Left mean F1": 0.0,
+        "Paired difference": 0.372,
+        "Right mean F1": 0.372
+      },
+      "notice": "Token overlap measures reference agreement, not factuality. Bootstrap intervals assume independent cases; this authored set is too small to establish general superiority.",
+      "rows": [
+        {
+          "expected": "14 days",
+          "id": "retention",
+          "left": "0",
+          "left_f1": 0,
+          "right": "ii.",
+          "right_f1": 0
+        },
+        {
+          "expected": "15 minutes",
+          "id": "incident",
+          "left": "every day",
+          "left_f1": 0,
+          "right": "a).",
+          "right_f1": 0
+        },
+        {
+          "expected": "30 minutes",
+          "id": "rto",
+          "left": "to recover from a traumatic event",
+          "left_f1": 0,
+          "right": "(iii)",
+          "right_f1": 0
+        },
+        {
+          "expected": "21 days",
+          "id": "refund",
+          "left": "0",
+          "left_f1": 0,
+          "right": "iii.",
+          "right_f1": 0
+        },
+        {
+          "expected": "8 megabytes",
+          "id": "limit",
+          "left": "240",
+          "left_f1": 0,
+          "right": "8 megabytes",
+          "right_f1": 1.0
+        },
+        {
+          "expected": "09:00 UTC",
+          "id": "hours",
+          "left": "September",
+          "left_f1": 0,
+          "right": "(ii)",
+          "right_f1": 0
+        },
+        {
+          "expected": "8080",
+          "id": "port",
+          "left": "adolf",
+          "left_f1": 0,
+          "right": "Port 8080",
+          "right_f1": 0.6667
+        },
+        {
+          "expected": "2",
+          "id": "replicas",
+          "left": "ten",
+          "left_f1": 0,
+          "right": "2",
+          "right_f1": 1.0
+        },
+        {
+          "expected": "unknown",
+          "id": "unknown",
+          "left": "a sys",
+          "left_f1": 0,
+          "right": "No",
+          "right_f1": 0
+        },
+        {
+          "expected": "USD",
+          "id": "currency",
+          "left": "dollar",
+          "left_f1": 0,
+          "right": "USD",
+          "right_f1": 1.0
+        },
+        {
+          "expected": "incident commander",
+          "id": "owner",
+          "left": "a senate committee",
+          "left_f1": 0,
+          "right": "The incident commander",
+          "right_f1": 0.8
+        },
+        {
+          "expected": "300 seconds",
+          "id": "ttl",
+          "left": "a year",
+          "left_f1": 0,
+          "right": "(iii)",
+          "right_f1": 0
+        }
+      ]
+    },
+    "local_demo": "https://github.com/abhijith-abhii/evalbench/blob/main/LEARNING_GUIDE.md",
+    "verification": "https://github.com/abhijith-abhii/evalbench/blob/main/VERIFICATION.md"
+  },
+  {
+    "id": 15,
+    "name": "ShelfMatch",
+    "slug": "shelfmatch",
+    "category": "ai-ml-engineering",
+    "problem": "Find products with text and visual constraints",
+    "features": [
+      "Text and image descriptor retrieval",
+      "Weighted multimodal similarity and material filtering",
+      "Original reproducible swatches and score explanations"
+    ],
+    "stack": "Pillow \u00b7 scikit-learn \u00b7 Flask",
+    "data": "Authored product cards and images",
+    "source_idea": "Multimodal AI Product",
+    "test_count": 12,
+    "flagship": false,
+    "verification_limits": [],
+    "repository": "https://github.com/abhijith-abhii/shelfmatch",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "ci_status": "passed",
+    "category_label": "AI / ML Engineering",
+    "screenshot": "assets/shelfmatch.png",
+    "recorded_run": {
+      "details": {
+        "data": "16 original procedural swatches; MIT",
+        "method": "TF-IDF cosine + color-histogram/texture cosine; explicitly engineered visual baseline",
+        "weight_semantics": "Text weight applies only when both modalities are present"
+      },
+      "metrics": {
+        "Best score": 0.8945,
+        "Matching materials": 16
+      },
+      "notice": "Scores measure similarity within this sample catalog, not probabilities or product quality. Visual reference is selected from the catalog; arbitrary uploads are not supported.",
+      "rows": [
+        {
+          "category": "fabric",
+          "color": "blue",
+          "description": "blue striped fabric material sample",
+          "id": "M01",
+          "image": "/static/swatches/M01.png",
+          "name": "Blue striped fabric",
+          "pattern": "striped",
+          "score": 0.8945,
+          "text_score": 0.8945,
+          "visual_score": 0.0
+        },
+        {
+          "category": "tile",
+          "color": "blue",
+          "description": "blue striped tile material sample",
+          "id": "M09",
+          "image": "/static/swatches/M09.png",
+          "name": "Blue striped tile",
+          "pattern": "striped",
+          "score": 0.5944,
+          "text_score": 0.5944,
+          "visual_score": 0.0
+        },
+        {
+          "category": "fabric",
+          "color": "red",
+          "description": "red striped fabric material sample",
+          "id": "M03",
+          "image": "/static/swatches/M03.png",
+          "name": "Red striped fabric",
+          "pattern": "striped",
+          "score": 0.4054,
+          "text_score": 0.4054,
+          "visual_score": 0.0
+        },
+        {
+          "category": "fabric",
+          "color": "green",
+          "description": "green striped fabric material sample",
+          "id": "M05",
+          "image": "/static/swatches/M05.png",
+          "name": "Green striped fabric",
+          "pattern": "striped",
+          "score": 0.4054,
+          "text_score": 0.4054,
+          "visual_score": 0.0
+        },
+        {
+          "category": "fabric",
+          "color": "gold",
+          "description": "gold striped fabric material sample",
+          "id": "M07",
+          "image": "/static/swatches/M07.png",
+          "name": "Gold striped fabric",
+          "pattern": "striped",
+          "score": 0.4054,
+          "text_score": 0.4054,
+          "visual_score": 0.0
+        },
+        {
+          "category": "fabric",
+          "color": "blue",
+          "description": "blue speckled fabric material sample",
+          "id": "M02",
+          "image": "/static/swatches/M02.png",
+          "name": "Blue speckled fabric",
+          "pattern": "speckled",
+          "score": 0.3,
+          "text_score": 0.3,
+          "visual_score": 0.0
+        },
+        {
+          "category": "tile",
+          "color": "blue",
+          "description": "blue speckled tile material sample",
+          "id": "M10",
+          "image": "/static/swatches/M10.png",
+          "name": "Blue speckled tile",
+          "pattern": "speckled",
+          "score": 0.1947,
+          "text_score": 0.1947,
+          "visual_score": 0.0
+        },
+        {
+          "category": "fabric",
+          "color": "red",
+          "description": "red speckled fabric material sample",
+          "id": "M04",
+          "image": "/static/swatches/M04.png",
+          "name": "Red speckled fabric",
+          "pattern": "speckled",
+          "score": 0.1054,
+          "text_score": 0.1054,
+          "visual_score": 0.0
+        },
+        {
+          "category": "fabric",
+          "color": "green",
+          "description": "green speckled fabric material sample",
+          "id": "M06",
+          "image": "/static/swatches/M06.png",
+          "name": "Green speckled fabric",
+          "pattern": "speckled",
+          "score": 0.1054,
+          "text_score": 0.1054,
+          "visual_score": 0.0
+        },
+        {
+          "category": "fabric",
+          "color": "gold",
+          "description": "gold speckled fabric material sample",
+          "id": "M08",
+          "image": "/static/swatches/M08.png",
+          "name": "Gold speckled fabric",
+          "pattern": "speckled",
+          "score": 0.1054,
+          "text_score": 0.1054,
+          "visual_score": 0.0
+        },
+        {
+          "category": "tile",
+          "color": "red",
+          "description": "red striped tile material sample",
+          "id": "M11",
+          "image": "/static/swatches/M11.png",
+          "name": "Red striped tile",
+          "pattern": "striped",
+          "score": 0.1054,
+          "text_score": 0.1054,
+          "visual_score": 0.0
+        },
+        {
+          "category": "tile",
+          "color": "green",
+          "description": "green striped tile material sample",
+          "id": "M13",
+          "image": "/static/swatches/M13.png",
+          "name": "Green striped tile",
+          "pattern": "striped",
+          "score": 0.1054,
+          "text_score": 0.1054,
+          "visual_score": 0.0
+        },
+        {
+          "category": "tile",
+          "color": "gold",
+          "description": "gold striped tile material sample",
+          "id": "M15",
+          "image": "/static/swatches/M15.png",
+          "name": "Gold striped tile",
+          "pattern": "striped",
+          "score": 0.1054,
+          "text_score": 0.1054,
+          "visual_score": 0.0
+        },
+        {
+          "category": "tile",
+          "color": "red",
+          "description": "red speckled tile material sample",
+          "id": "M12",
+          "image": "/static/swatches/M12.png",
+          "name": "Red speckled tile",
+          "pattern": "speckled",
+          "score": 0.0,
+          "text_score": 0.0,
+          "visual_score": 0.0
+        },
+        {
+          "category": "tile",
+          "color": "green",
+          "description": "green speckled tile material sample",
+          "id": "M14",
+          "image": "/static/swatches/M14.png",
+          "name": "Green speckled tile",
+          "pattern": "speckled",
+          "score": 0.0,
+          "text_score": 0.0,
+          "visual_score": 0.0
+        },
+        {
+          "category": "tile",
+          "color": "gold",
+          "description": "gold speckled tile material sample",
+          "id": "M16",
+          "image": "/static/swatches/M16.png",
+          "name": "Gold speckled tile",
+          "pattern": "speckled",
+          "score": 0.0,
+          "text_score": 0.0,
+          "visual_score": 0.0
+        }
+      ]
+    },
+    "local_demo": "https://github.com/abhijith-abhii/shelfmatch/blob/main/LEARNING_GUIDE.md",
+    "verification": "https://github.com/abhijith-abhii/shelfmatch/blob/main/VERIFICATION.md"
+  },
+  {
+    "id": 16,
+    "name": "Shipyard",
+    "slug": "shipyard",
+    "category": "cloud-devops",
+    "problem": "Ship a health-checked service through CI",
+    "features": [
+      "Container build",
+      "non-root app",
+      "CI tests",
+      "smoke deployment",
+      "rollback notes"
+    ],
+    "stack": "Docker \u00b7 GitHub Actions \u00b7 Flask",
+    "data": "Local service; temporary CI containers",
+    "source_idea": "Container delivery pipeline",
+    "test_count": 9,
+    "flagship": true,
+    "verification_limits": [
+      "Actual temporary CI container verified; no continuously hosted public service or production rollout."
+    ],
+    "repository": "https://github.com/abhijith-abhii/shipyard",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "ci_status": "passed",
+    "category_label": "Cloud / DevOps",
+    "screenshot": "assets/shipyard.png",
+    "recorded_run": {
+      "answer": "2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824",
+      "details": {
+        "algorithm": "SHA-256",
+        "encoding": "UTF-8",
+        "purpose": "integrity fingerprint; not password hashing",
+        "release": "local-dev"
+      },
+      "metrics": {
+        "Lines": 1,
+        "Release": "local-dev",
+        "UTF-8 bytes": 5
+      }
+    },
+    "local_demo": "https://github.com/abhijith-abhii/shipyard/blob/main/LEARNING_GUIDE.md",
+    "verification": "https://github.com/abhijith-abhii/shipyard/blob/main/VERIFICATION.md"
+  },
+  {
+    "id": 17,
+    "name": "Network Foundry",
+    "slug": "aws-network-infrastructure-troubleshooting-lab",
+    "category": "cloud-devops",
+    "problem": "Reproduce a segmented AWS network safely",
+    "features": [
+      "Existing Terraform modules",
+      "mock-provider tests",
+      "plan guidance",
+      "local validation"
+    ],
+    "stack": "Terraform \u00b7 Python",
+    "data": "AWS configuration; no paid apply",
+    "source_idea": "AWS network troubleshooting lab",
+    "test_count": 16,
+    "flagship": false,
+    "verification_limits": [
+      "No AWS resources deployed; only configuration, Python and mock-provider checks executed."
+    ],
+    "repository": "https://github.com/abhijith-abhii/aws-network-infrastructure-troubleshooting-lab",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "ci_status": "passed",
+    "category_label": "Cloud / DevOps",
+    "recorded_run": {
+      "terraform_test_summary": "Success! 12 passed, 0 failed.",
+      "python_tests": [
+        "----------------------------------------------------------------------",
+        "Ran 16 tests in 0.010s",
+        "",
+        "OK"
+      ],
+      "aws_deployed": false
+    },
+    "local_demo": "https://github.com/abhijith-abhii/aws-network-infrastructure-troubleshooting-lab/blob/main/LEARNING_GUIDE.md",
+    "verification": "https://github.com/abhijith-abhii/aws-network-infrastructure-troubleshooting-lab/blob/main/VERIFICATION.md"
+  },
+  {
+    "id": 18,
+    "name": "CostCompass",
+    "slug": "costcompass",
+    "category": "cloud-devops",
+    "problem": "Explain AWS cost drivers and review opportunities",
+    "features": [
+      "CUR-style ingestion",
+      "anomaly detection",
+      "allocation gaps",
+      "bounded scenarios"
+    ],
+    "stack": "pandas \u00b7 Flask",
+    "data": "Synthetic AWS billing rows",
+    "source_idea": "Cloud cost analysis",
+    "test_count": 8,
+    "flagship": false,
+    "verification_limits": [],
+    "repository": "https://github.com/abhijith-abhii/costcompass",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "ci_status": "passed",
+    "category_label": "Cloud / DevOps",
+    "screenshot": "assets/costcompass.png",
+    "recorded_run": {
+      "bars": [
+        {
+          "label": "EC2",
+          "value": 2378.41
+        },
+        {
+          "label": "S3",
+          "value": 599.37
+        },
+        {
+          "label": "RDS",
+          "value": 1420.11
+        },
+        {
+          "label": "DataTransfer",
+          "value": 271.49
+        }
+      ],
+      "details": {
+        "credits": "negative lines rejected, not silently netted",
+        "recommendations": [
+          "Review untagged cost ownership before allocating budgets.",
+          "Inspect flagged DataTransfer days against deployment and traffic records.",
+          "Collect utilization before evaluating idle EC2 resources."
+        ],
+        "scenario_assumption": "15% of EC2 cost is avoidable; not observed savings",
+        "service_totals": {
+          "DataTransfer": "271.4920",
+          "EC2": "2378.4076",
+          "RDS": "1420.1133",
+          "S3": "599.3689"
+        },
+        "total_usd": "4669.3818",
+        "untagged_usd": "1572.2389"
+      },
+      "metrics": {
+        "Billed sample total": "$4,669.38",
+        "Compute scenario": "$356.76",
+        "Flagged service-days": 1,
+        "Untagged cost": "$1,572.24"
+      },
+      "rows": [
+        {
+          "cost_usd": 29.2359,
+          "date": "2026-08-20",
+          "median_usd": 8.96805,
+          "ratio": 3.26,
+          "service": "DataTransfer"
+        }
+      ]
+    },
+    "local_demo": "https://github.com/abhijith-abhii/costcompass/blob/main/LEARNING_GUIDE.md",
+    "verification": "https://github.com/abhijith-abhii/costcompass/blob/main/VERIFICATION.md"
+  },
+  {
+    "id": 19,
+    "name": "Failover Forge",
+    "slug": "failover-forge",
+    "category": "cloud-devops",
+    "problem": "Measure local recovery under service failure",
+    "features": [
+      "Two real local HTTP processes",
+      "Client-side fallback after primary termination",
+      "Measured restart-to-ready evidence and cleanup"
+    ],
+    "stack": "Python \u00b7 HTTP subprocesses",
+    "data": "Local synthetic service traffic",
+    "source_idea": "Service failover and recovery experiment",
+    "test_count": 5,
+    "flagship": false,
+    "verification_limits": [],
+    "repository": "https://github.com/abhijith-abhii/failover-forge",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "ci_status": "passed",
+    "category_label": "Cloud / DevOps",
+    "screenshot": "assets/failover-forge.png",
+    "recorded_run": {
+      "details": {
+        "data_loss": "not measured; service is stateless",
+        "events": [
+          {
+            "phase": "healthy",
+            "served_by": "primary"
+          },
+          {
+            "phase": "primary terminated",
+            "primary_error": "URLError",
+            "served_by": "secondary"
+          },
+          {
+            "phase": "primary restarted",
+            "served_by": "primary"
+          }
+        ],
+        "failover_ms": 0.393,
+        "mode": "local HTTP process experiment",
+        "request_attempts": 3,
+        "restart_to_ready_ms": 27.939,
+        "rpo": "not applicable",
+        "topology": "same host; sequential client-side fallback; not a proxy or multi-region system"
+      },
+      "metrics": {
+        "Environment": "same-host processes",
+        "Measured failover": "0.393 ms",
+        "Restart to ready": "27.939 ms"
+      },
+      "notice": "One measured local run. Timing depends on this machine and is not an SLA or a cloud benchmark.",
+      "rows": [
+        {
+          "phase": "healthy",
+          "served_by": "primary"
+        },
+        {
+          "phase": "primary terminated",
+          "primary_error": "URLError",
+          "served_by": "secondary"
+        },
+        {
+          "phase": "primary restarted",
+          "served_by": "primary"
+        }
+      ]
+    },
+    "local_demo": "https://github.com/abhijith-abhii/failover-forge/blob/main/LEARNING_GUIDE.md",
+    "verification": "https://github.com/abhijith-abhii/failover-forge/blob/main/VERIFICATION.md"
+  },
+  {
+    "id": 20,
+    "name": "Scale Lab",
+    "slug": "scale-lab",
+    "category": "cloud-devops",
+    "problem": "Understand autoscaling under measured load",
+    "features": [
+      "Kubernetes deployment",
+      "HPA",
+      "probes",
+      "CPU load",
+      "kind CI"
+    ],
+    "stack": "Kubernetes \u00b7 kind \u00b7 Python",
+    "data": "Ephemeral local/CI cluster",
+    "source_idea": "Kubernetes autoscaling experiment",
+    "test_count": 12,
+    "flagship": false,
+    "verification_limits": [
+      "Actual kind cluster scaled from two to six available replicas; multi-node production operation and scale-down benchmarks are outside scope."
+    ],
+    "repository": "https://github.com/abhijith-abhii/scale-lab",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "ci_status": "passed",
+    "category_label": "Cloud / DevOps",
+    "screenshot": "assets/scale-lab.png",
+    "recorded_run": {
+      "answer": "ceil(2 \u00d7 120 / 60), with 10% tolerance and 2\u201310 bounds.",
+      "details": {
+        "HPA_target": "60%",
+        "cpu_requests": "100m per pod",
+        "real_validation": "See reports/ci-evidence.json after the Kubernetes workflow completes."
+      },
+      "metrics": {
+        "Calculated desired": 4,
+        "Current replicas": 2,
+        "Minimum / maximum": "2 / 10"
+      },
+      "notice": "Educational calculation, not a live cluster reading. Kubernetes also accounts for missing metrics, readiness, stabilization and scale policies."
+    },
+    "local_demo": "https://github.com/abhijith-abhii/scale-lab/blob/main/LEARNING_GUIDE.md",
+    "verification": "https://github.com/abhijith-abhii/scale-lab/blob/main/VERIFICATION.md"
+  },
+  {
+    "id": 21,
+    "name": "Margin Ledger",
+    "slug": "margin-ledger",
+    "category": "data-analytics",
+    "problem": "Find product and return patterns with SQL",
+    "features": [
+      "Star schema",
+      "8 queries",
+      "reconciliation",
+      "business report"
+    ],
+    "stack": "SQLite \u00b7 Python \u00b7 Flask",
+    "data": "Synthetic retail orders",
+    "source_idea": "End-to-End SQL Analytics Project",
+    "test_count": 8,
+    "flagship": false,
+    "verification_limits": [],
+    "repository": "https://github.com/abhijith-abhii/margin-ledger",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "ci_status": "passed",
+    "category_label": "Data Analytics",
+    "screenshot": "assets/margin-ledger.png",
+    "recorded_run": {
+      "answer": "SELECT category,COUNT(*) line_count,SUM(net_revenue_cents)/100.0 revenue_usd,SUM(margin_cents)/100.0 margin_usd,ROUND(100.0*SUM(margin_cents)/NULLIF(SUM(net_revenue_cents),0),2) margin_pct FROM facts GROUP BY category ORDER BY margin_usd DESC;\n",
+      "details": {
+        "grain": "one product line within an order",
+        "report": "category_margin",
+        "source": "data/lines.csv"
+      },
+      "metrics": {
+        "customers": 147,
+        "margin_usd": 30110.42,
+        "orders": 500,
+        "revenue_usd": 81893.75
+      },
+      "notice": "Synthetic retail case. These queries describe observed order lines, not causal drivers. Returned lines fully reverse revenue/cost; shipping, tax and processing fees are excluded.",
+      "rows": [
+        {
+          "category": "Home",
+          "line_count": 417,
+          "margin_pct": 37.02,
+          "margin_usd": 10867.27,
+          "revenue_usd": 29353.75
+        },
+        {
+          "category": "Books",
+          "line_count": 437,
+          "margin_pct": 35.63,
+          "margin_usd": 9763.09,
+          "revenue_usd": 27398.75
+        },
+        {
+          "category": "Tech",
+          "line_count": 445,
+          "margin_pct": 37.71,
+          "margin_usd": 9480.06,
+          "revenue_usd": 25141.25
+        }
+      ]
+    },
+    "local_demo": "https://github.com/abhijith-abhii/margin-ledger/blob/main/LEARNING_GUIDE.md",
+    "verification": "https://github.com/abhijith-abhii/margin-ledger/blob/main/VERIFICATION.md"
+  },
+  {
+    "id": 22,
+    "name": "JourneyMark",
+    "slug": "journeymark",
+    "category": "data-analytics",
+    "problem": "Compare marketing attribution assumptions",
+    "features": [
+      "First/last/linear/time-decay models",
+      "lookback",
+      "conversion reconciliation"
+    ],
+    "stack": "pandas \u00b7 Flask",
+    "data": "Synthetic touchpoint journeys",
+    "source_idea": "Marketing Attribution Model Comparison",
+    "test_count": 10,
+    "flagship": false,
+    "verification_limits": [],
+    "repository": "https://github.com/abhijith-abhii/journeymark",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "ci_status": "passed",
+    "category_label": "Data Analytics",
+    "screenshot": "assets/journeymark.png",
+    "recorded_run": {
+      "bars": [
+        {
+          "label": "Email",
+          "value": 1943.05
+        },
+        {
+          "label": "Referral",
+          "value": 3231.21
+        },
+        {
+          "label": "Search",
+          "value": 2549.901
+        },
+        {
+          "label": "Social",
+          "value": 2509.19
+        },
+        {
+          "label": "Unattributed",
+          "value": 2731.95
+        }
+      ],
+      "details": {
+        "conversion_revenue_cents": 1296530,
+        "credit_total": 115.0,
+        "revenue_cents_total": 1296530.0,
+        "unattributed": "No eligible touch receives explicit unattributed credit",
+        "window": "(max(previous conversion, lookback start), conversion time]"
+      },
+      "metrics": {
+        "Allocated credit": 115.0,
+        "Conversions": 115,
+        "Model": "linear",
+        "Revenue": "$12,965.30"
+      },
+      "notice": "Model choice can change channel rankings. ROAS uses assigned credit, not causal lift; channel spend covers the synthetic example period.",
+      "rows": [
+        {
+          "attributed_revenue_usd": 1943.05,
+          "attributed_roas": 5.552,
+          "channel": "Email",
+          "credit": 17.802,
+          "spend_usd": 350.0
+        },
+        {
+          "attributed_revenue_usd": 3231.21,
+          "attributed_roas": 6.462,
+          "channel": "Referral",
+          "credit": 26.283,
+          "spend_usd": 500.0
+        },
+        {
+          "attributed_revenue_usd": 2549.901,
+          "attributed_roas": 0.85,
+          "channel": "Search",
+          "credit": 23.686,
+          "spend_usd": 3000.0
+        },
+        {
+          "attributed_revenue_usd": 2509.19,
+          "attributed_roas": 1.141,
+          "channel": "Social",
+          "credit": 21.229,
+          "spend_usd": 2200.0
+        },
+        {
+          "attributed_revenue_usd": 2731.95,
+          "attributed_roas": null,
+          "channel": "Unattributed",
+          "credit": 26.0,
+          "spend_usd": 0.0
+        }
+      ]
+    },
+    "local_demo": "https://github.com/abhijith-abhii/journeymark/blob/main/LEARNING_GUIDE.md",
+    "verification": "https://github.com/abhijith-abhii/journeymark/blob/main/VERIFICATION.md"
+  },
+  {
+    "id": 23,
+    "name": "Retail Control Tower",
+    "slug": "retail-supply-chain-control-tower",
+    "category": "data-analytics",
+    "problem": "Explore business performance and inventory tradeoffs",
+    "features": [
+      "Existing analytics",
+      "independent browser dashboard",
+      "filters",
+      "drilldown"
+    ],
+    "stack": "Python \u00b7 SQLite \u00b7 browser",
+    "data": "Existing synthetic fixture; provenance preserved",
+    "source_idea": "Business Question Dashboard",
+    "test_count": 8,
+    "flagship": true,
+    "verification_limits": [],
+    "repository": "https://github.com/abhijith-abhii/retail-supply-chain-control-tower",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "ci_status": "passed",
+    "category_label": "Data Analytics",
+    "screenshot": "assets/retail-supply-chain-control-tower.png",
+    "recorded_run": {
+      "bars": [
+        {
+          "label": "2016-01",
+          "value": 13431.79
+        },
+        {
+          "label": "2016-02",
+          "value": 12644.41
+        },
+        {
+          "label": "2016-03",
+          "value": 14053.67
+        },
+        {
+          "label": "2016-04",
+          "value": 12980.57
+        }
+      ],
+      "chart_title": "Selected revenue by month",
+      "details": {
+        "definitions": {
+          "late": "actual shipping days > scheduled days; distinct orders",
+          "profit": "sum of source line benefit",
+          "revenue": "sum of source line totals"
+        },
+        "filters": {},
+        "late_orders": 117,
+        "order_count": 240,
+        "privacy": "Explicit ingestion column allowlist; names, emails and password test columns excluded",
+        "profit_usd": 2435.5119827570284,
+        "revenue_usd": 53110.436788634564,
+        "selected_lines": 484,
+        "source_rows": 484
+      },
+      "metrics": {
+        "Late order share": "48.8%",
+        "Orders": 240,
+        "Profit": "$2,435.51",
+        "Revenue": "$53,110.44"
+      },
+      "notice": "Synthetic operational analysis. Profit excludes costs absent from the source. Filtering to a category or segment changes the observed cohort; these are descriptive comparisons.",
+      "rows": [
+        {
+          "Category Name": "Synthetic Category 0",
+          "lines": 330,
+          "margin_pct": 4.2,
+          "profit_usd": 1558.65,
+          "revenue_usd": 37125.38,
+          "units": 660
+        },
+        {
+          "Category Name": "Synthetic Category 1",
+          "lines": 154,
+          "margin_pct": 5.49,
+          "profit_usd": 876.87,
+          "revenue_usd": 15985.06,
+          "units": 308
+        }
+      ]
+    },
+    "local_demo": "https://github.com/abhijith-abhii/retail-supply-chain-control-tower/blob/main/LEARNING_GUIDE.md",
+    "verification": "https://github.com/abhijith-abhii/retail-supply-chain-control-tower/blob/main/VERIFICATION.md"
+  },
+  {
+    "id": 24,
+    "name": "Experiment Lens",
+    "slug": "experiment-lens",
+    "category": "data-analytics",
+    "problem": "Audit and interpret an A/B experiment",
+    "features": [
+      "SRM checks",
+      "intervals",
+      "lift",
+      "power",
+      "stopping caveats"
+    ],
+    "stack": "scipy \u00b7 Flask",
+    "data": "Seeded randomized synthetic experiment",
+    "source_idea": "A/B Testing Statistical Analysis",
+    "test_count": 9,
+    "flagship": false,
+    "verification_limits": [],
+    "repository": "https://github.com/abhijith-abhii/experiment-lens",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "ci_status": "passed",
+    "category_label": "Data Analytics",
+    "screenshot": "assets/experiment-lens.png",
+    "recorded_run": {
+      "answer": "Effect remains uncertain. Lift interval: -0.51 to 3.66 percentage points.",
+      "details": {
+        "absolute_lift": 0.01578604775150036,
+        "alpha": 0.05,
+        "control_conversions": 248,
+        "control_n": 2033,
+        "control_rate": 0.1219872110181997,
+        "control_wilson": [
+          0.10846955413294164,
+          0.13693072317194788
+        ],
+        "lift_interval": [
+          -0.005055683384255553,
+          0.03662777888725627
+        ],
+        "p_value": 0.1374422719526736,
+        "planning_mde": 0.03,
+        "planning_n_per_arm_80pct": 2063,
+        "relative_lift": 0.12940739951129127,
+        "srm_flag": false,
+        "srm_p_value": 0.29669288276391964,
+        "treatment_conversions": 271,
+        "treatment_n": 1967,
+        "treatment_rate": 0.13777325876970006,
+        "treatment_wilson": [
+          0.12324639691602886,
+          0.153712186625903
+        ],
+        "validity_warning": "Sparse outcomes require exact methods; repeated peeking invalidates fixed-horizon p-values."
+      },
+      "metrics": {
+        "Absolute lift": "1.58 pp",
+        "Planning users/arm": 2063,
+        "SRM p-value": 0.2967,
+        "p-value": 0.1374
+      },
+      "notice": "Fixed-horizon analysis of synthetic randomized data. No sequential monitoring adjustment, covariate adjustment, or multiple-metric correction. Statistical significance is not a business decision.",
+      "rows": [
+        {
+          "conversions": 248,
+          "rate": 0.1219872110181997,
+          "users": 2033,
+          "variant": "A"
+        },
+        {
+          "conversions": 271,
+          "rate": 0.13777325876970006,
+          "users": 1967,
+          "variant": "B"
+        }
+      ]
+    },
+    "local_demo": "https://github.com/abhijith-abhii/experiment-lens/blob/main/LEARNING_GUIDE.md",
+    "verification": "https://github.com/abhijith-abhii/experiment-lens/blob/main/VERIFICATION.md"
+  },
+  {
+    "id": 25,
+    "name": "Energy Brief",
+    "slug": "energy-brief",
+    "category": "data-analytics",
+    "problem": "Research electricity generation trends reproducibly",
+    "features": [
+      "Pinned public data",
+      "trend decomposition",
+      "concentration",
+      "report"
+    ],
+    "stack": "Python \u00b7 pandas \u00b7 Flask",
+    "data": "Our World in Data energy data / cited upstream",
+    "source_idea": "Data-Driven Industry Report",
+    "test_count": 10,
+    "flagship": false,
+    "verification_limits": [],
+    "repository": "https://github.com/abhijith-abhii/energy-brief",
+    "status": {
+      "implementation": "implemented",
+      "tests": "passed",
+      "documentation": "complete",
+      "publication": "published",
+      "completion": "complete"
+    },
+    "ci_status": "passed",
+    "category_label": "Data Analytics",
+    "screenshot": "assets/energy-brief.png",
+    "recorded_run": {
+      "answer": "India: renewable electricity share changed by 5.76 percentage points between 2000 and 2024. Electricity generation changed from 571.4 to 2,036.5 TWh. This descriptive comparison does not identify policy effects or investment returns.",
+      "bars": [
+        {
+          "label": "2000",
+          "value": 14.048
+        },
+        {
+          "label": "2001",
+          "value": 13.0
+        },
+        {
+          "label": "2002",
+          "value": 11.938
+        },
+        {
+          "label": "2003",
+          "value": 11.695
+        },
+        {
+          "label": "2004",
+          "value": 15.638
+        },
+        {
+          "label": "2005",
+          "value": 15.254
+        },
+        {
+          "label": "2006",
+          "value": 17.135
+        },
+        {
+          "label": "2007",
+          "value": 17.802
+        },
+        {
+          "label": "2008",
+          "value": 16.768
+        },
+        {
+          "label": "2009",
+          "value": 15.166
+        },
+        {
+          "label": "2010",
+          "value": 15.114
+        },
+        {
+          "label": "2011",
+          "value": 16.656
+        },
+        {
+          "label": "2012",
+          "value": 14.868
+        },
+        {
+          "label": "2013",
+          "value": 16.034
+        },
+        {
+          "label": "2014",
+          "value": 15.77
+        },
+        {
+          "label": "2015",
+          "value": 14.625
+        },
+        {
+          "label": "2016",
+          "value": 14.438
+        },
+        {
+          "label": "2017",
+          "value": 15.451
+        },
+        {
+          "label": "2018",
+          "value": 16.294
+        },
+        {
+          "label": "2019",
+          "value": 17.617
+        },
+        {
+          "label": "2020",
+          "value": 19.007
+        },
+        {
+          "label": "2021",
+          "value": 18.791
+        },
+        {
+          "label": "2022",
+          "value": 20.19
+        },
+        {
+          "label": "2023",
+          "value": 19.287
+        },
+        {
+          "label": "2024",
+          "value": 19.808
+        }
+      ],
+      "chart_title": "Renewable share of electricity (%)",
+      "details": {
+        "annual_growth_method": "geometric growth across observed endpoints; missing intermediate observations not interpolated",
+        "missing_values": {},
+        "observed_endpoints": [
+          2000,
+          2024
+        ],
+        "requested_years": [
+          2000,
+          2024
+        ],
+        "scope": "electricity generation, not total energy consumption",
+        "source": {
+          "attribution": "Our World in Data: Hannah Ritchie, Pablo Rosado and Max Roser; electricity series sourced from Ember / Energy Institute as documented in the source codebook.",
+          "commit": "7e387a16f70a510e433f8aac7efeac6faa1e5059",
+          "license": "OWID-produced data CC BY; upstream data retain source terms. See DATA.md and source-codebook.csv.",
+          "repository": "https://github.com/owid/energy-data",
+          "retrieved": "2026-09-28",
+          "rows": 150,
+          "selection": "Six named countries, 2000\u20132024; missing values retained",
+          "source_sha256": "266f2e2baad7975351bc9bb4aa061d22b1da9fe4c47d51d2ac6071e01e171f76",
+          "source_url": "https://raw.githubusercontent.com/owid/energy-data/7e387a16f70a510e433f8aac7efeac6faa1e5059/owid-energy-data.csv",
+          "subset_sha256": "f75541907384092d8d227580a0f8693f5875b47dd3988fa65007ec1872e3ad83"
+        }
+      },
+      "metrics": {
+        "Generation CAGR": "5.44%",
+        "Latest generation": "2,036.5 TWh",
+        "Renewables share": "19.8%",
+        "Share change": "+5.76 pp"
+      },
+      "notice": "Research snapshot through 2024, not a live forecast. Compare observed endpoints and inspect missingness before interpreting trends.",
+      "rows": [
+        {
+          "electricity_generation": 571.39,
+          "fossil_share_elec": 83.192,
+          "nuclear_share_elec": 2.76,
+          "renewables_share_elec": 14.048,
+          "year": 2000
+        },
+        {
+          "electricity_generation": 586.09,
+          "fossil_share_elec": 83.777,
+          "nuclear_share_elec": 3.223,
+          "renewables_share_elec": 13.0,
+          "year": 2001
+        },
+        {
+          "electricity_generation": 609.64,
+          "fossil_share_elec": 84.888,
+          "nuclear_share_elec": 3.174,
+          "renewables_share_elec": 11.938,
+          "year": 2002
+        },
+        {
+          "electricity_generation": 638.13,
+          "fossil_share_elec": 85.462,
+          "nuclear_share_elec": 2.843,
+          "renewables_share_elec": 11.695,
+          "year": 2003
+        },
+        {
+          "electricity_generation": 698.32,
+          "fossil_share_elec": 81.318,
+          "nuclear_share_elec": 3.044,
+          "renewables_share_elec": 15.638,
+          "year": 2004
+        },
+        {
+          "electricity_generation": 704.52,
+          "fossil_share_elec": 82.229,
+          "nuclear_share_elec": 2.517,
+          "renewables_share_elec": 15.254,
+          "year": 2005
+        },
+        {
+          "electricity_generation": 744.43,
+          "fossil_share_elec": 80.496,
+          "nuclear_share_elec": 2.368,
+          "renewables_share_elec": 17.135,
+          "year": 2006
+        },
+        {
+          "electricity_generation": 796.26,
+          "fossil_share_elec": 79.959,
+          "nuclear_share_elec": 2.239,
+          "renewables_share_elec": 17.802,
+          "year": 2007
+        },
+        {
+          "electricity_generation": 828.41,
+          "fossil_share_elec": 81.393,
+          "nuclear_share_elec": 1.838,
+          "renewables_share_elec": 16.768,
+          "year": 2008
+        },
+        {
+          "electricity_generation": 878.63,
+          "fossil_share_elec": 82.92,
+          "nuclear_share_elec": 1.914,
+          "renewables_share_elec": 15.166,
+          "year": 2009
+        },
+        {
+          "electricity_generation": 936.39,
+          "fossil_share_elec": 82.421,
+          "nuclear_share_elec": 2.465,
+          "renewables_share_elec": 15.114,
+          "year": 2010
+        },
+        {
+          "electricity_generation": 1032.32,
+          "fossil_share_elec": 80.223,
+          "nuclear_share_elec": 3.121,
+          "renewables_share_elec": 16.656,
+          "year": 2011
+        },
+        {
+          "electricity_generation": 1088.42,
+          "fossil_share_elec": 82.087,
+          "nuclear_share_elec": 3.045,
+          "renewables_share_elec": 14.868,
+          "year": 2012
+        },
+        {
+          "electricity_generation": 1141.23,
+          "fossil_share_elec": 81.047,
+          "nuclear_share_elec": 2.919,
+          "renewables_share_elec": 16.034,
+          "year": 2013
+        },
+        {
+          "electricity_generation": 1258.68,
+          "fossil_share_elec": 81.473,
+          "nuclear_share_elec": 2.756,
+          "renewables_share_elec": 15.77,
+          "year": 2014
+        },
+        {
+          "electricity_generation": 1310.56,
+          "fossil_share_elec": 82.452,
+          "nuclear_share_elec": 2.923,
+          "renewables_share_elec": 14.625,
+          "year": 2015
+        },
+        {
+          "electricity_generation": 1394.93,
+          "fossil_share_elec": 82.845,
+          "nuclear_share_elec": 2.717,
+          "renewables_share_elec": 14.438,
+          "year": 2016
+        },
+        {
+          "electricity_generation": 1462.39,
+          "fossil_share_elec": 81.99,
+          "nuclear_share_elec": 2.558,
+          "renewables_share_elec": 15.451,
+          "year": 2017
+        },
+        {
+          "electricity_generation": 1571.65,
+          "fossil_share_elec": 81.222,
+          "nuclear_share_elec": 2.485,
+          "renewables_share_elec": 16.294,
+          "year": 2018
+        },
+        {
+          "electricity_generation": 1600.98,
+          "fossil_share_elec": 79.563,
+          "nuclear_share_elec": 2.821,
+          "renewables_share_elec": 17.617,
+          "year": 2019
+        },
+        {
+          "electricity_generation": 1563.43,
+          "fossil_share_elec": 78.14,
+          "nuclear_share_elec": 2.853,
+          "renewables_share_elec": 19.007,
+          "year": 2020
+        },
+        {
+          "electricity_generation": 1678.72,
+          "fossil_share_elec": 78.593,
+          "nuclear_share_elec": 2.616,
+          "renewables_share_elec": 18.791,
+          "year": 2021
+        },
+        {
+          "electricity_generation": 1804.61,
+          "fossil_share_elec": 77.25,
+          "nuclear_share_elec": 2.56,
+          "renewables_share_elec": 20.19,
+          "year": 2022
+        },
+        {
+          "electricity_generation": 1918.26,
+          "fossil_share_elec": 78.201,
+          "nuclear_share_elec": 2.513,
+          "renewables_share_elec": 19.287,
+          "year": 2023
+        },
+        {
+          "electricity_generation": 2036.52,
+          "fossil_share_elec": 77.506,
+          "nuclear_share_elec": 2.686,
+          "renewables_share_elec": 19.808,
+          "year": 2024
+        }
+      ]
+    },
+    "local_demo": "https://github.com/abhijith-abhii/energy-brief/blob/main/LEARNING_GUIDE.md",
+    "verification": "https://github.com/abhijith-abhii/energy-brief/blob/main/VERIFICATION.md"
+  }
+]
